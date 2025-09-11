@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Музыкальный Чарт</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #3b0764, #000);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: rgba(107, 33, 168, 0.4);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .card p {
+      margin: 4px 0 12px;
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .plays {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #a3a3a3;
+    }
+    .chart-container {
+      background: rgba(107, 33, 168, 0.4);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <h1>Еженедельный Музыкальный Чарт</h1>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Song One</h2>
+      <p>Artist A</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      </audio>
+      <div class="plays">Прослушиваний: 1200</div>
+    </div>
+
+    <div class="card">
+      <h2>Song Two</h2>
+      <p>Artist B</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+      </audio>
+      <div class="plays">Прослушиваний: 980</div>
+    </div>
+
+    <div class="card">
+      <h2>Song Three</h2>
+      <p>Artist C</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+      </audio>
+      <div class="plays">Прослушиваний: 760</div>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <h2>Прослушивания по дням</h2>
+    <canvas id="myChart" height="120"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+        datasets: [{
+          label: 'Прослушивания',
+          data: [400, 600, 500, 800, 1200, 1500, 1000],
+          borderColor: '#a855f7',
+          backgroundColor: 'rgba(168,85,247,0.2)',
+          borderWidth: 3,
+          tension: 0.4,
+          pointRadius: 5,
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: 'white' } },
+        },
+        scales: {
+          x: { ticks: { color: 'white' } },
+          y: { ticks: { color: 'white' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
