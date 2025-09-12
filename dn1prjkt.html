@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Электронный дневник</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6741d9; /* Фиолетовый */
+            --accent: #00bfae;  /* Бирюзовый */
+            --accent2: #ffba4a;
+            --bg: #f6f6fa;
+            --card-bg: #fff;
+            --header-bg: #f9fbff;
+            --footer-bg: #222849;
+            --text-main: #27324a;
+            --text-light: #6c7a99;
+            --radius: 22px;
+        }
+        html, body {
+            padding: 0; margin: 0;
+            background: var(--bg);
+            font-family: 'Inter', Arial, sans-serif;
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+        body {
+            display: flex; flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: var(--header-bg);
+            box-shadow: 0 2px 24px #6741d915;
+            border-bottom: 1px solid #ece7f7;
+            position: sticky; top: 0; left: 0; z-index: 99;
+            animation: fadeInDown 0.8s cubic-bezier(.72,1.64,.37,.66);
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-24px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .header-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            max-width: 1200px; margin: 0 auto; height: 94px; padding: 0 32px;
+        }
+        .logo-block {
+            display: flex; align-items: center; gap: 19px;
+        }
+        /* УБРАНО .logo-img */
+        .logo-text-block {
+            display: flex; flex-direction: column; align-items: flex-start;
+        }
+        .logo-modern {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg,var(--primary),var(--accent),var(--accent2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 2px;
+            line-height: 1;
+        }
+        .logo-modern .black {
+            color: #222;
+            background: none !important;
+            -webkit-text-fill-color: #222;
+            text-fill-color: #222;
+        }
+        .logo-sub {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin: 0 0 0 3px;
+            font-weight: 500;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+        nav { display: flex; gap: 38px; align-items: center; }
+        .nav-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.12rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            transition: color .20s, border-bottom .18s;
+            padding: 2px 4px;
+            border-bottom: 2px solid transparent;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            height: 2px;
+            border-radius: 1px;
+            width: 0;
+            background: linear-gradient(90deg,var(--primary),var(--accent));
+            transition: width .18s;
+            position: absolute;
+            left: 0; bottom: -2px;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: var(--primary);
+        }
+        .nav-link:hover::after, .nav-link:focus::after {
+            width: 100%;
+        }
+        .header-btns {
+            display: flex; gap: 18px; align-items: center;
+        }
+        .btn, .btn-outline {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            padding: 10px 32px;
+            letter-spacing: 0.01em;
+            white-space: nowrap;
+            transition: background .18s, color .18s, box-shadow .18s, border .18s, transform .18s;
+            display: flex; align-items: center;
+        }
+        .btn {
+            background: linear-gradient(90deg,#6741d9 70%,#00bfae 100%);
+            color: #fff;
+            box-shadow: 0 2px 14px #6741d919;
+            border: 2px solid var(--primary);
+            will-change: background, box-shadow, transform;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg,#3f2780 70%,#009f98 100%);
+            box-shadow: 0 8px 22px #6741d933;
+            transform: translateY(-2px) scale(1.04);
+        }
+        .btn-outline {
+            background: #fff;
+            color: var(--primary);
+            border: 2px solid var(--accent);
+        }
+        .btn-outline:hover {
+            background: #f5f2ff;
+            color: #00bfae;
+            border-color: var(--primary);
+            transform: translateY(-2px) scale(1.04);
+        }
+        .btn.hero-main {
+            font-size: 1.22rem;
+            padding: 15px 44px;
+            border-radius: 30px;
+            box-shadow: 0 6px 20px #6741d915;
+            letter-spacing: 0.04em;
+        }
+        main.main {
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 70vh;
+            padding-bottom: 38px;
+        }
+        /* HERO */
+        .hero {
+            padding: 70px 0 32px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 36px;
+        }
+        .hero-left {
+            flex: 1 1 440px;
+            min-width: 340px;
+            padding-left: 48px;
+        }
+        .hero-title {
+            font-size: 3.3rem;
+            font-weight: 900;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(90deg, #6741d9, #00bfae, #ffba4a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            line-height: 1.08;
+            letter-spacing: 0.04em;
+            animation: fadeInUp 0.9s cubic-bezier(.52,1.64,.37,.66);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .hero-title span {
+            color: var(--primary);
+            -webkit-text-fill-color: var(--primary);
+            background: none;
+        }
+        .hero-desc {
+            font-size: 1.33rem;
+            color: #334155;
+            margin-bottom: 36px;
+            line-height: 1.6;
+            opacity: 0.94;
+        }
+        .hero-btns {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+        .hero-right {
+            flex: 1 1 340px;
+            min-width: 320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-hero {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: 0 12px 38px #6741d929;
+            padding: 38px 48px;
+            min-width: 315px;
+            min-height: 215px;
+            border: 1.5px solid #e0e7ef;
+            transition: box-shadow 0.22s, transform 0.22s;
+            animation: cardPop 1.1s cubic-bezier(.42,1.64,.37,.66);
+        }
+        @keyframes cardPop {
+            0% { opacity: 0; transform: scale(0.93);}
+            60% { opacity: 0.6; }
+            100% { opacity: 1; transform: scale(1);}
+        }
+        .card-hero:hover {
+            box-shadow: 0 18px 60px #00bfae40;
+            transform: scale(1.04);
+        }
+        .card-row {
+            display: flex; align-items: center; margin-bottom: 24px;
+            transition: background 0.18s;
+        }
+        .card-row:last-child { margin-bottom: 0;}
+        .card-icon {
+            font-size: 2rem;
+            margin-right: 22px;
+            color: var(--primary);
+            font-family: 'Material Symbols Rounded';
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+            transition: color .18s, transform .18s;
+        }
+        .card-row:hover .card-icon {
+            color: var(--accent);
+            transform: scale(1.18) rotate(-8deg);
+        }
+        .card-title { font-weight: 700; color: #6741d9; font-size: 1.18rem;}
+        .card-status {
+            margin-left: 18px;
+            background: linear-gradient(90deg,#00bfae22,#6741d911);
+            color: #00bfae;
+            border-radius: 14px;
+            font-size: 1.07rem;
+            padding: 3px 17px;
+            font-weight: 500;
+            box-shadow: 0 2px 9px #00bfae18;
+            transition: background .18s, color .18s;
+        }
+        /* Stats */
+        .stats {
+            background: var(--card-bg);
+            padding: 48px 0 44px 0;
+            display: flex;
+            justify-content: center;
+            gap: 92px;
+            border-radius: 17px;
+            margin: 38px 0 60px 0;
+            box-shadow: 0 4px 24px #6741d90c;
+            animation: fadeInUp 1.15s cubic-bezier(.42,1.64,.37,.66);
+        }
+        .stat {
+            text-align: center;
+            min-width: 150px;
+            transition: transform .18s, box-shadow .18s;
+            border-radius: 18px;
+            padding: 12px 8px;
+        }
+        .stat:hover {
+            transform: translateY(-4px) scale(1.06);
+            box-shadow: 0 6px 18px #00bfae33;
+        }
+        .stat-value {
+            font-size: 2.3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 9px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-label {
+            font-size: 1.17rem;
+            color: #222;
+            opacity: 0.85;
+        }
+        /* Features */
+        .section { padding: 54px 0 30px 0; text-align: center; }
+        .section-title {
+            font-size: 2.23rem;
+            font-weight: bold;
+            color: #6741d9;
+            margin-bottom: 12px;
+            letter-spacing: 0.01em;
+        }
+        .section-desc {
+            font-size: 1.18rem;
+            color: #444;
+            margin-bottom: 38px;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 32px;
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 40px 38px;
+            width: 310px;
+            box-shadow: 0 2px 18px #6741d913;
+            transition: transform 0.18s cubic-bezier(.52,1.64,.37,.66), box-shadow 0.18s, background 0.18s;
+            display: flex; flex-direction: column; align-items: center;
+            border: 1.5px solid #ece7f7;
+            will-change: transform, box-shadow;
+            animation: cardPop 1.2s cubic-bezier(.42,1.64,.37,.66);
+        }
+        .feature-icon {
+            font-family: 'Material Symbols Rounded';
+            font-size: 2.7rem;
+            color: var(--primary);
+            margin-bottom: 13px;
+            transition: color .18s, transform .18s;
+        }
+        .feature-card:hover .feature-icon {
+            color: var(--accent);
+            transform: scale(1.18) rotate(-8deg);
+        }
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        .feature-desc {
+            color: #333;
+            font-size: 1.07rem;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px) scale(1.06);
+            box-shadow: 0 16px 44px #6741d926;
+            background: #f6f8ff;
+        }
+        /* Benefits */
+        .benefits {
+            background: linear-gradient(90deg, #6741d9 0%, #00bfae 100%);
+            color: #fff;
+            padding: 70px 0 54px 0;
+            min-height: 340px;
+            margin-bottom: 0;
+            animation: fadeInUp 1.18s cubic-bezier(.52,1.64,.37,.66);
+        }
+        .benefits-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 90px;
+        }
+        .benefits-list {
+            flex: 1 1 490px;
+        }
+        .benefits-title {
+            font-size: 2.18rem;
+            font-weight: bold;
+            margin-bottom: 13px;
+            letter-spacing: 0.01em;
+        }
+        .benefits-desc {
+            font-size: 1.16rem;
+            margin-bottom: 30px;
+        }
+        .benefit-item {
+            margin-bottom: 17px;
+            font-size: 1.17rem;
+            letter-spacing: 0.01em;
+            display: flex; align-items: center;
+            transition: color .18s;
+        }
+        .benefit-item .tick {
+            color: #00bfae;
+            font-size: 1.24em;
+            margin-right: 11px;
+            transition: color .18s;
+        }
+        .benefit-item:hover .tick {
+            color: #ffba4a;
+        }
+        .benefit-item:hover {
+            color: #ffba4a;
+        }
+        .benefits-rating {
+            flex: 1 1 370px;
+            background: #fff;
+            border-radius: 22px;
+            padding: 32px 38px;
+            box-shadow: 0 2px 14px #6741d910;
+            border: 1.5px solid #ece7f7;
+            color: #6741d9;
+            transition: box-shadow .18s, transform .18s;
+            animation: cardPop 1.3s cubic-bezier(.42,1.64,.37,.66);
+        }
+        .benefits-rating:hover {
+            box-shadow: 0 10px 32px #00bfae44;
+            transform: scale(1.04);
+        }
+        .rating-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        .stars {
+            color: #ffba4a;
+            font-size: 1.55rem;
+            margin-bottom: 10px;
+        }
+        .rating-score {
+            font-size: 1.23rem;
+            color: #00bfae;
+            margin-bottom: 28px;
+        }
+        .review {
+            background: #f8f7fc;
+            border-radius: 13px;
+            padding: 17px 19px;
+            color: #6741d9;
+            margin-bottom: 15px;
+            font-size: 1.09rem;
+            transition: background .18s, color .18s;
+        }
+        .review:last-child { margin-bottom: 0;}
+        .review-author {
+            font-size: 0.97rem;
+            margin-top: 9px;
+            opacity: 0.93;
+        }
+        /* Footer */
+        .footer {
+            background: var(--footer-bg);
+            color: #fff;
+            padding: 56px 0 36px 0;
+            margin-top: 0;
+            font-size: 1.03rem;
+            border-radius: 28px 28px 0 0;
+            box-shadow: 0 -8px 32px #0002;
+            animation: fadeInUp 1.4s cubic-bezier(.42,1.64,.37,.66);
+        }
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 90px;
+        }
+        .footer-col { flex: 1 1 280px; }
+        .footer-logo { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 22px;}
+        .footer-logo-row { display: flex; align-items: center; }
+        .footer-title { font-weight: bold; font-size: 1.16rem; margin-bottom: 14px; }
+        .logo-modern.footer {
+            font-size:1.36rem;
+            margin-bottom: 3px;
+            background: none !important;
+            -webkit-text-fill-color: #fff;
+            color: #fff;
+        }
+        .footer-links { margin: 0; padding: 0; list-style: none;}
+        .footer-links li { margin-bottom: 9px;}
+        .footer-link { color: #fff; text-decoration: none; }
+        .footer-link:hover { text-decoration: underline; color: var(--accent);}
+        .footer-copy { margin-top: 42px; color: #bbb; font-size: 1.03rem;}
+        .footer-bottom {
+            text-align: center;
+            color: #bbb;
+            font-size: 1.05rem;
+            margin-top: 22px;
+        }
+        /* Responsive */
+        @media (max-width: 1100px) {
+            .header-inner, main.main, .benefits-inner, .footer-inner { max-width: 98vw; }
+            .hero { flex-direction: column; gap: 34px;}
+            .hero-left { padding-left: 0;}
+            .benefits-inner { flex-direction: column; gap: 38px;}
+            .footer-inner { flex-direction: column; gap: 32px; }
+            .features-grid { gap: 28px 0; }
+        }
+        @media (max-width: 700px) {
+            .header-inner, .footer-inner, main.main {
+                flex-direction: column; gap: 0; padding: 0 10px;
+            }
+            .section, .benefits, .stats { padding-left: 9px; padding-right: 9px; }
+            nav { gap: 15px; }
+        }
+        .btn, .btn-outline, .btn.hero-main {
+            white-space: nowrap;
+        }
+        .material-symbols-rounded {
+            font-family: 'Material Symbols Rounded';
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+            font-size: 2.7rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-inner">
+        <div class="logo-block">
+            <!-- УБРАНО ИЗОБРАЖЕНИЕ! -->
+            <span class="logo-text-block">
+                <span class="logo-modern">D<span class="black">н</span>евник</span>
+                <span class="logo-sub">Современная платформа для образования</span>
+            </span>
+        </div>
+        <nav>
+            <a href="#features" class="nav-link">Возможности</a>
+            <a href="#benefits" class="nav-link">Преимущества</a>
+            <a href="https://dnevnik-com.github.io/Dnevnik.com/contacts.html" class="nav-link" target="_blank">Контакты</a>
+            <a href="https://shimmering-lollipop-a5290b.netlify.app/" class="nav-link" target="_blank">О компании</a>
+        </nav>
+        <div class="header-btns">
+            <a href="http://i-joindnevnik.com.tilda.ws" class="btn-outline" target="_blank">Подключить ОО</a>
+            <a href="https://dnevnik-com.github.io/Dnevnik.com/login.v2.html" class="btn hero-main" id="login-btn" target="_blank">Войти</a>
+            <a href="http://i-joindnevnik.com.tilda.ws/portal-dnevnik" class="btn-outline" target="_blank">Портал поддержки</a>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-title">
+                Цифровая трансформация <span>образования</span>
+            </div>
+            <div class="hero-desc">
+                Современная платформа для управления образовательным процессом и коммуникации. Объединяем учителей, учеников и родителей на единой цифровой экосистеме.
+            </div>
+            <div class="hero-btns">
+                <a href="https://dnevnik-com.github.io/Dnevnik.com/login.v2.html" class="btn hero-main" id="start-btn" target="_blank">Начать работу&nbsp;→</a>
+                <a href="http://i-joindnevnik.com.tilda.ws" class="btn-outline" target="_blank">Подключить школу</a>
+            </div>
+        </div>
+        <div class="hero-right" id="hero-photo">
+            <div class="card-hero">
+                <div class="card-row">
+                    <span class="material-symbols-rounded card-icon">calculate</span>
+                    <span class="card-title">Математика</span>
+                    <span class="card-status">Отлично</span>
+                </div>
+                <div class="card-row">
+                    <span class="material-symbols-rounded card-icon">calendar_month</span>
+                    <span class="card-title">Расписание</span>
+                    <span class="card-status">6 уроков сегодня</span>
+                </div>
+                <div class="card-row">
+                    <span class="material-symbols-rounded card-icon">chat</span>
+                    <span class="card-title">Сообщения</span>
+                    <span class="card-status">3 новых уведомления</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value">1000+</div>
+            <div class="stat-label">Образовательных организаций</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">500K+</div>
+            <div class="stat-label">Активных пользователей</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Время работы системы</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">Техническая поддержка</div>
+        </div>
+    </div>
+    <!-- Возможности платформы -->
+    <section class="section" id="features">
+        <div class="section-title">Возможности платформы</div>
+        <div class="section-desc">Полный набор инструментов для эффективного управления образовательным процессом</div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">library_books</span>
+                <div class="feature-title">Электронный журнал</div>
+                <div class="feature-desc">Ведение оценок, посещаемости и успеваемости учащихся в режиме реального времени</div>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">calendar_today</span>
+                <div class="feature-title">Расписание уроков</div>
+                <div class="feature-desc">Удобное планирование и отслеживание учебного процесса для всех участников</div>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">sms</span>
+                <div class="feature-title">Общение</div>
+                <div class="feature-desc">Безопасная платформа для общения между учителями, учениками и родителями</div>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">bar_chart</span>
+                <div class="feature-title">Аналитика</div>
+                <div class="feature-desc">Подробная статистика успеваемости и прогресса каждого ученика</div>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">security</span>
+                <div class="feature-title">Безопасность</div>
+                <div class="feature-desc">Надежная защита персональных данных и соответствие требованиям ФЗ-152</div>
+            </div>
+            <div class="feature-card">
+                <span class="material-symbols-rounded feature-icon">manage_accounts</span>
+                <div class="feature-title">Управление</div>
+                <div class="feature-desc">Эффективные инструменты администрирования для руководства школы</div>
+            </div>
+        </div>
+    </section>
+    <!-- Преимущества -->
+    <section class="benefits" id="benefits">
+        <div class="benefits-inner">
+            <div class="benefits-list">
+                <div class="benefits-title">Преимущества использования</div>
+                <div class="benefits-desc">Платформа помогает образовательным организациям повысить эффективность и качество обучения, упростить документооборот и обеспечить прозрачную коммуникацию.</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Экономия времени на ведении документооборота</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Повышение качества образовательного процесса</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Улучшение взаимодействия с родителями</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Автоматизация отчетности</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Мобильный доступ 24/7</div>
+                <div class="benefit-item"><span class="tick">✔️</span>Интеграция с государственными системами</div>
+            </div>
+            <div class="benefits-rating">
+                <div class="rating-title">Рейтинг платформы</div>
+                <div class="stars">★★★★★</div>
+                <div class="rating-score">4.9 из 5 на основе 2,847 отзывов</div>
+                <div class="review">
+                    "Отличная платформа! Значительно упростила работу с документооборотом."<br>
+                    <div class="review-author">— Директор МБОУ СОШ №15</div>
+                </div>
+                <div class="review">
+                    "Родители довольны возможностью отслеживать успеваемость в реальном времени."<br>
+                    <div class="review-author">— Классный руководитель</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer" id="footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="footer-logo-row">
+                    <span class="logo-modern footer">D<span style="color:#fff;">н</span>евник</span>
+                </div>
+                <span class="logo-sub" style="color:#cfcfcf; font-size:1rem; margin:2px 0 0 2px;">Современная платформа для образования</span>
+            </div>
+            <div style="font-size:1rem; margin-top: 16px;">
+                Мы создаем инновационные решения для цифровой трансформации образования, объединяя всех участников на единой платформе.
+            </div>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">Продукт</div>
+            <ul class="footer-links">
+                <li><a href="#features" class="footer-link">Возможности</a></li>
+                <li><a href="#benefits" class="footer-link">Преимущества</a></li>
+                <li><a href="#" class="footer-link">Тарифы</a></li>
+                <li><a href="#" class="footer-link">API</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <div class="footer-title">Поддержка</div>
+            <ul class="footer-links">
+                <li><a href="http://i-joindnevnik.com.tilda.ws/portal-dnevnik" class="footer-link" target="_blank">Центр поддержки</a></li>
+                <li><a href="#" class="footer-link">Документация</a></li>
+                <li><a href="#" class="footer-link">Обучение</a></li>
+                <li><a href="https://dnevnik-com.github.io/Dnevnik.com/contacts.html" class="footer-link" target="_blank">Контакты</a></li>
+                <li><a href="https://shimmering-lollipop-a5290b.netlify.app/" class="footer-link" target="_blank">О компании</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Ежедневно с 09:00 до 18:00 (кроме выходных)<br>
+        © 2018-2025 ООО «Dневник»<br>
+        <a href="#" class="footer-link" style="color:#bbb;">Политика конфиденциальности</a> &nbsp;|&nbsp;
+        <a href="#" class="footer-link" style="color:#bbb;">Условия использования</a>
+    </div>
+</footer>
+<script>
+    // Кнопка "Начать работу" увеличивает фото справа при наведении
+    const startBtn = document.getElementById('start-btn');
+    const heroPhoto = document.getElementById('hero-photo');
+    if(startBtn && heroPhoto) {
+        startBtn.addEventListener('mouseenter', () => {
+            heroPhoto.style.transform = 'scale(1.09)';
+            heroPhoto.style.transition = 'transform 0.33s cubic-bezier(.52,1.64,.37,.66)';
+            heroPhoto.style.zIndex = '10';
+        });
+        startBtn.addEventListener('mouseleave', () => {
+            heroPhoto.style.transform = 'scale(1)';
+            heroPhoto.style.transition = 'transform 0.28s cubic-bezier(.52,1.64,.37,.66)';
+            heroPhoto.style.zIndex = '';
+        });
+    }
+</script>
+</body>
+</html>
