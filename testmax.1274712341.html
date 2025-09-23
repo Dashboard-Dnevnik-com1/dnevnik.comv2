@@ -1,0 +1,538 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app="dnevnik" ng-jq=""><head><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/content/location/location.js" id="pphgdbgldlmicfdkhondlafkiomnelnk"></script><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/libs/extend-native-history-api.js"></script><script src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/libs/requests.js"></script>
+    <meta name="google" value="notranslate">
+    <meta charset="utf-8">
+    <title>Лента новостей</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Удобная и безопасная среда общения школьников, учителей и родителей. Домашние задания, расписание, оценки - всё в одном месте.">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, interactive-widget=resizes-content">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="apple-itunes-app" content="app-id=1127180528, affiliate-data=, app-argument=https://redirect.appmetrica.yandex.com/serve/26340489351491419&amp;ct=native&amp;mt=8">
+
+    
+    <script>
+    function sendMetrika(type, action) {
+        if (document.readyState === 'complete' && window.dnevnik && window.dnevnik.analytics && window.dnevnik.analytics.yandex && window.dnevnik.analytics.yandex.params) {
+                var params = '{"SmartAppBanner": {"1000015929249": { "student": {"'+type+'": {"'+action+'":{}}}}}}';
+                window.dnevnik.analytics.yandex.params(JSON.parse(params));
+            }
+        }        
+    </script>
+        <link rel="manifest" href="https://dnevnik.ru/manifest">
+        <script>
+            document.addEventListener('smartbanner.view', function() { sendMetrika("smartapp_android_old", "view"); });
+            document.addEventListener('smartbanner.clickView', function() { sendMetrika("smartapp_android_old", "clickApp"); });
+            document.addEventListener('smartbanner.clickInstall', function() { sendMetrika("smartapp_android_old", "clickGooglePlay"); });
+        </script>
+
+    
+    <link rel="icon" href="https://static.dnevnik.ru/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://static.dnevnik.ru/img/icons/favicon.ico" type="image/x-icon">
+    <link id="screen-addition-css" rel="stylesheet" href="https://static.dnevnik.ru/css/screen_addition.css?v=379a6caf" media="all" type="text/css">
+    
+
+        <link rel="stylesheet" href="https://static.dnevnik.ru/styles/main/common.css?v=143157b6" media="all" type="text/css">
+        <link rel="stylesheet" href="https://static.dnevnik.ru/blocks/blocks.css?v=f73b2133" media="all" type="text/css">
+        <link rel="stylesheet" href="https://static.dnevnik.ru/css/adaptive.css?v=068f655e" media="all" type="text/css"> 
+    <link rel="stylesheet" href="https://static.dnevnik.ru/client/notifications.css?v=cd15f86a" type="text/css">
+
+    
+<script type="text/javascript">var dnevnik = {"urls":{"domain":"dnevnik.ru","taskStateUrl":"https://dnevnik.ru/TaskStateHandler","moderate":"https://dnevnik.ru/v2/soc/moderation/abuse","whiteList":["dnevnik.ru","mosreg.ru","microsoft.com","lego.com","surveymonkey.ru","surveymonkey.com","gosuslugi.ru","adfox.ru","facebook.com","ok.ru","twitter.com","instagram.com","apple.com","google.com","dnevnik.ru","youtube.com","youtu.be","research.net","csdnevnik.ru","globallab.org","yaklass.ru","foxford.ru","sberbank.ru","magnit-info.ru","letovo.ru","office.com","sharepoint.com","onenote.com","office365.com","magnitznaniy.ru","magnit.ru","wikipedia.org","vk.com","yandex.ru","mail.ru","google.ru","google.com","ok.ru","avito.ru","instagram.com","facebook.com","aliexpress.com","gismeteo.ru","rambler.ru","2gis.ru","fotostrana.ru","twitter.com","livejournal.com","lenta.ru","hh.ru","kinopoisk.ru","ria.ru","yadi.sk","pikabu.ru","booking.com","rbc.ru","twitch.tv","yandex.com","mosregtest.ru","imumk.ru","mfactory.club","analyticsapp.ru","skysmart.ru","skyeng.link","hotwheels-challenge.ru","go.skyeng.ru","skyeng.ru","doma.uchi.ru","uchi.ru","uchitel.club","eduko.app","teacher.eduko.ru","eduko.ru","eduko.page.link/","mosreg.statusapp.ru","http://mosreg.statusapp.ru","https://vk.cc/","https://dnevnik.clickmeeting.com/","dnevnik.clickmeeting.com","https://dnevnik.clickmeeting.com/dnevnik-zadaniya/register?utm_source=dnevnik","https://dnevnik.clickmeeting.com/dnevnik-zadaniya/register?utm_source=dnevnik&utm_medium=post&utm_campaign=1811","clickmeeting.com","dnevnik.statusapp.ru","statusapp.ru","дневник.рф","xn--b1addnkoc.xn--p1ai","https://hw.lecta.ru/","hw.lecta.ru","lecta.ru","https://tsenp.mob-edu.ru","https://sso.mob-edu.ru","tsenp.mob-edu.ru","mob-edu.ru","sso.mob-edu.ru","https://forms.yandex.ru/u/67ee2a06e010db53ef9c8917/?page=2","https://forms.yandex.ru","https://cp.99ballov.ru/user/dnevnik/test-provide","https://urok55.ru","urok55.ru","cp.99ballov.ru/user/dnevnik/test-provide"],"userCounters":"https://dnevnik.ru/counters","emailSettings":"https://dnevnik.ru/v2/user/settings?view=email","smilesSpriteUrl":"https://static.dnevnik.ru/images/sprites/emojione.sprites.svg","tinyMceBaseUrl":"https://static.dnevnik.ru/assets/scripts/vendors/tinymce","gaAutoLinkUrls":null,"adblockDummyUrl":"https://static.dnevnik.ru/images/banners/adblockDummies/dnevnikDummy.jpg"},"settings":{"yandexMetrikaIds":["17969140"],"yandexMetrikaСlickmapEnabled":false,"enableAdFoxZeroPixel":true,"yandexMetrikaId":"17969140","environmentPrefix":"","yandexMetrikaWebvisorEnabled":false},"fileUploadSettings":{"stateUrl":"https://content.dnevnik.ru/gettaskstatus","resultUrl":"https://content.dnevnik.ru/getresult","deleteFileUrl":"https://content.dnevnik.ru/delete","deleteFolderUrl":"https://content.dnevnik.ru/deletefolder","defaultFileSizeLimit":"2147483648"},"user":{"preferableLanguage":"ru-RU","suitableCultures":["ru-RU"],"id":"1000015929249","sex":"Male","age":14,"emailHash":"8c8b6fecbbe9a2da5a4bed1df5c9c21153ba24dab4b61132f7b3c4edd8b68900","group":9,"role":"EduStudent","commonRole":"student","schools":[{"id":"1000025137238","regionName":"Луганская Народная Республика"}],"children":[],"isMethodist":false,"experimentPRTopic":"PRTopic_gr1"},"auth":{"isAuthenticated":true,"updateInterval":600000,"loginUrl":"https://login.dnevnik.ru/auth","masterLoginUrl":null},"visitParams":{"__RedesignAbGroup2":"groupA"},"localizationSchoolType":"","contextRegionUrl":""};</script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://pphgdbgldlmicfdkhondlafkiomnelnk/executors/traffic.js"></script>
+
+            <script type="text/javascript" src="https://static.dnevnik.ru/assets/scripts/modules/redesign.min.367efd8f.js?v=367efd8f"></script>
+    <script type="text/javascript" src="https://static.dnevnik.ru/assets/scripts/vendors/requirejs/require-2.3.7.js?v=084c85b2"></script>
+    <script type="text/javascript">
+        require.config({
+            baseUrl: "https://static.dnevnik.ru/assets/scripts/modules",
+            urlArgs: "v=2775f186",
+        });
+    </script>
+            <script type="text/javascript" src="https://static.dnevnik.ru/assets/scripts/modules/main-redesign.min.127fcc88.js?v=127fcc88"></script>
+    <script type="text/javascript" src="https://static.dnevnik.ru/blocks/blocks.js?v=650f8170"></script>
+    <script type="text/javascript" src="https://static.dnevnik.ru/javascripts/local/ru.js?v=0320e479"></script>
+    <script src="https://static.dnevnik.ru/client/react.vendor.bundle.js?v=6f52d235" type="text/javascript"></script>
+
+    <script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script><link rel="preconnect" href="https://yastatic.net"><link rel="preconnect" href="https://avatars.mds.yandex.net"><link rel="preconnect" href="https://mc.yandex.ru"><link rel="preconnect" href="https://ads.adfox.ru"><link rel="preload" href="https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2" type="font/woff2" as="font" crossorigin="anonymous"><style id="ysTextCssRule">@font-face {
+        font-family: "YS Text Variable";
+        src: url("https://yastatic.net/s3/home/fonts/ys/3/text-variable-full.woff2") format("woff2");
+        font-weight: 400 700;
+        font-display: optional;
+    }</style><script async="" crossorigin="anonymous" src="https://yastatic.net/safeframe-bundles/0.83/host.js"></script>
+    <script src="https://static.dnevnik.ru/client/localization/ru-RU.js?v=933c00dc" type="text/javascript"></script>
+
+    
+    
+    <script type="text/javascript">
+        require(['layoutcontrols/menu'],
+            function (menu) {
+                var model = {
+                    newMessages: "Новых сообщений",
+                    noMessages: "Нет новых сообщений",
+                    newFriendRequests: "Новых друзей",
+                    noFriendRequests: "Нет новых друзей",
+                    newGroups: "Новых приглашений",
+                    noGroups: "Нет новых приглашений",
+                    Account: "Личный счёт",
+                    newEvents: "Новых событий",
+                    noEvents: "Нет новых событий",
+                };
+                menu(model);
+            });
+    </script>
+    <script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (max-width: 620px) {
+            .header_adaptive_wrapper {
+                width: 100%;
+                height: 70px;
+                visibility: hidden;
+                
+            }
+        }
+    </style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menu.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/userCounter.js?v=2775f186"></script><style type="text/css">.UZznxc{width:100%;height:inherit;min-height:inherit;max-height:inherit}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menumore" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menumore.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/domready" src="https://static.dnevnik.ru/assets/scripts/modules/utils/domready.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menuPointerMarker" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menuPointerMarker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/dropdownContainer/dropdownContainer" src="https://static.dnevnik.ru/assets/scripts/modules/blocks/dropdownContainer/dropdownContainer.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/menuYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/menuYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/urlTracker" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/urlTracker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ab/yandexMetrikaTracker" src="https://static.dnevnik.ru/assets/scripts/modules/ab/yandexMetrikaTracker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/adblockDummyInsert" src="https://static.dnevnik.ru/assets/scripts/modules/common/adblockDummyInsert.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/footerCopyright/footerCopyright" src="https://static.dnevnik.ru/assets/scripts/modules/blocks/footerCopyright/footerCopyright.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="yandexMetrika/yandexMetrikaCounter" src="https://static.dnevnik.ru/assets/scripts/modules/yandexMetrika/yandexMetrikaCounter.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/commonYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/commonYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/loginYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/loginYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/sessionUuid" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/sessionUuid.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/loginEsiaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/loginEsiaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menu.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/userCounter.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/dropdownContainer/dropdownContainer" src="https://static.dnevnik.ru/assets/scripts/modules/blocks/dropdownContainer/dropdownContainer.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/menuYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/menuYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/urlTracker" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/urlTracker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ab/yandexMetrikaTracker" src="https://static.dnevnik.ru/assets/scripts/modules/ab/yandexMetrikaTracker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/adblockDummyInsert" src="https://static.dnevnik.ru/assets/scripts/modules/common/adblockDummyInsert.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="blocks/footerCopyright/footerCopyright" src="https://static.dnevnik.ru/assets/scripts/modules/blocks/footerCopyright/footerCopyright.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="yandexMetrika/yandexMetrikaCounter" src="https://static.dnevnik.ru/assets/scripts/modules/yandexMetrika/yandexMetrikaCounter.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/commonYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/commonYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menumore" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menumore.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/domready" src="https://static.dnevnik.ru/assets/scripts/modules/utils/domready.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menuPointerMarker" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menuPointerMarker.js?v=2775f186"></script><style type="text/css">.UZznxc{width:100%;height:inherit;min-height:inherit;max-height:inherit}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/loginYaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/loginYaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/sessionUuid" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/sessionUuid.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics/loginEsiaMetrika" src="https://static.dnevnik.ru/assets/scripts/modules/analytics/loginEsiaMetrika.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menu.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/userCounter.js?v=2775f186"></script><style type="text/css">.UZznxc{width:100%;height:inherit;min-height:inherit;max-height:inherit}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menumore" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menumore.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/domready" src="https://static.dnevnik.ru/assets/scripts/modules/utils/domready.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menuPointerMarker" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menuPointerMarker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menu.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/userCounter.js?v=2775f186"></script><style type="text/css">.UZznxc{width:100%;height:inherit;min-height:inherit;max-height:inherit}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/domready" src="https://static.dnevnik.ru/assets/scripts/modules/utils/domready.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menuPointerMarker" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menuPointerMarker.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/menu" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/menu.js?v=2775f186"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="layoutcontrols/userCounter" src="https://static.dnevnik.ru/assets/scripts/modules/layoutcontrols/userCounter.js?v=2775f186"></script><style type="text/css">.UZznxc{width:100%;height:inherit;min-height:inherit;max-height:inherit}</style></head>
+<body class="page-body" __processed_48836d0d-d519-4c4c-a8a6-910ca0eef030__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6InBwaGdkYmdsZGxtaWNmZGtob25kbGFma2lvbW5lbG5rIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjMwIiwic2NvcmUiOjIwMDMwfV0=">
+
+
+    <div class="header_adaptive_wrapper" bis_skin_checked="1" style="visibility: visible;">
+        
+    <div class="page-header " bis_skin_checked="1" style="transform: none;">
+        <div class="page-header__panel-wrapper" bis_skin_checked="1">
+            <div class="page-header__panel" bis_skin_checked="1">
+                <div class="page-header__panel-container" bis_skin_checked="1">
+                    <a href="https://dnevnik.ru/userfeed/" title="На главную страницу Дневника" class="header-logotype"></a>
+                    
+<div class="user-counters" bis_skin_checked="1">
+    <div id="chat_notifications_container" bis_skin_checked="1"><div class="ehhPN iHMaO"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"><path fill="#AAB6C2" fill-rule="evenodd" d="M7.293.25c2.873 0 5.368 1.915 6.213 4.66l.07.244-1.449.387C11.532 3.313 9.562 1.75 7.293 1.75c-2.77 0-5.019 2.31-5.019 5.176 0 1.05.3 2.048.853 2.89a.75.75 0 0 1 .113.531c-.099.618-.34 1.192-.694 1.68l-.055.068.052-.001a1.73 1.73 0 0 0 1.038-.484l.117-.124a.75.75 0 0 1 .97-.146c.313.198.65.36 1.005.484l.27.086-.415 1.442a6.509 6.509 0 0 1-.861-.315L4.38 12.9l-.133.102a3.217 3.217 0 0 1-1.669.593l-.204.007c-.648 0-1.267-.19-1.792-.542a.75.75 0 0 1 .04-1.271 2.352 2.352 0 0 0 1.055-1.331l.025-.094-.135-.24a6.758 6.758 0 0 1-.786-2.89l-.007-.308C.774 3.24 3.686.25 7.293.25zm14.345 13.802c0 1.218-.313 2.391-.897 3.425l-.134.225.024.081c.178.564.549 1.051 1.048 1.378l.153.093a.75.75 0 0 1 .037 1.286 3.564 3.564 0 0 1-1.92.559c-.81 0-1.576-.27-2.19-.748l-.021-.017-.065.035a7.148 7.148 0 0 1-2.83.722l-.333.008c-3.935 0-7.128-3.152-7.128-7.047 0-3.894 3.193-7.046 7.128-7.046s7.128 3.152 7.128 7.046zm-12.756 0c0 3.062 2.517 5.547 5.628 5.547 1.06 0 2.073-.288 2.952-.824a.75.75 0 0 1 .951.142c.383.43.936.682 1.532.681l-.053-.062a4.056 4.056 0 0 1-.78-1.625l-.044-.227a.75.75 0 0 1 .12-.547c.616-.902.95-1.968.95-3.085 0-3.06-2.517-5.546-5.628-5.546-3.11 0-5.628 2.485-5.628 5.546z"></path></svg><div class="tvlOr" style="top: 4px; left: 295px;">Нет новых сообщений<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="left: calc(50% - 10px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.41266 7.51954C5.57195 9.49507 8.42815 9.49507 9.58745 7.51954L14.0001 0H0Z" fill="#0F3159"></path></svg></div></div></div>
+
+    <div class="ntf-notifications-container" bis_skin_checked="1">
+          <div id="ntf-notifications-root" bis_skin_checked="1"><div class="HEPXU"><div class="F9rcV" title="Нет новых уведомлений" data-test-id="notification-icon"></div></div></div>
+          <div class="ntf-notifications-icon" bis_skin_checked="1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18"><g><g><path fill="#aab6c2" d="M11.71 4.522c-.5-1.284-1.198-2.212-1.96-2.588v3.014a8.172 8.172 0 0 0 1.96-.426zm-5.424.009a8.186 8.186 0 0 0 1.964.42V1.934c-.764.377-1.463 1.308-1.964 2.597zm.01 8.963c.5 1.276 1.195 2.198 1.954 2.572v-2.989a8.19 8.19 0 0 0-1.954.417zm5.405.009a8.176 8.176 0 0 0-1.951-.423v2.986c.757-.374 1.451-1.292 1.95-2.563zM5.848 5.968a13.217 13.217 0 0 0-.314 2.282H8.25V6.456a9.663 9.663 0 0 1-2.402-.488zm6.302-.01a9.65 9.65 0 0 1-2.4.496V8.25h2.716a13.212 13.212 0 0 0-.316-2.291zm-.007 6.11c.168-.715.28-1.494.323-2.318H9.75v1.824a9.652 9.652 0 0 1 2.393.494zm-6.289-.01a9.665 9.665 0 0 1 2.396-.486V9.75H5.534c.043.82.154 1.597.32 2.309zM17.75 9A8.75 8.75 0 1 1 .25 9a8.75 8.75 0 1 1 17.5 0zm-5.298-6.377c.225.376.429.79.609 1.234.208-.14.394-.291.553-.45a7.263 7.263 0 0 0-1.162-.784zm0 12.754c.408-.221.791-.48 1.147-.772a3.867 3.867 0 0 0-.547-.44 8.967 8.967 0 0 1-.6 1.212zm1.082-2.677c.423.247.801.529 1.119.84a7.216 7.216 0 0 0 1.559-3.79h-2.244a14.54 14.54 0 0 1-.434 2.95zm1.132-8.224c-.32.314-.7.599-1.126.849.232.905.38 1.891.428 2.925h2.244a7.215 7.215 0 0 0-1.546-3.774zM5.548 2.623c-.42.228-.814.495-1.178.797.163.16.352.31.563.452.182-.45.387-.868.615-1.249zm0 12.754a8.982 8.982 0 0 1-.606-1.226 3.914 3.914 0 0 0-.556.442c.36.297.749.56 1.162.784zM4.456 5.339a5.74 5.74 0 0 1-1.134-.848A7.215 7.215 0 0 0 1.788 8.25h2.244c.048-1.028.194-2.01.424-2.911zm-1.121 8.185a5.76 5.76 0 0 1 1.127-.838 14.548 14.548 0 0 1-.43-2.936H1.788a7.215 7.215 0 0 0 1.547 3.774z"></path></g></g></svg>
+          </div>
+    </div>
+  
+
+
+        <div id="gift_notifications_container" bis_skin_checked="1"><div class="lRjso iHMaO"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#AAB6C2" fill-rule="evenodd" d="M15.8913 3.31122H14.6539C14.8171 3.05289 14.9248 2.76293 14.9555 2.45627C15.0536 1.47621 14.5375 0.597657 13.6588 0.208151C12.8511 -0.149878 11.9434 -0.00351909 11.2898 0.589289L9.72725 2.0054C9.42295 1.67257 8.9855 1.46339 8.5 1.46339C8.01364 1.46339 7.57549 1.67324 7.27112 2.0071L5.70659 0.589123C5.05192 -0.00368508 4.14461 -0.14948 3.33728 0.20835C2.45879 0.597889 1.94255 1.47674 2.04096 2.45677C2.07174 2.7632 2.17939 3.05303 2.34258 3.31122H1.10869C0.496354 3.31122 0 3.8076 0 4.4199V6.08295C0 6.38908 0.248193 6.63731 0.554359 6.63731H16.4457C16.7518 6.63731 17 6.38911 17 6.08295V4.4199C17 3.8076 16.5036 3.31122 15.8913 3.31122ZM6.83696 3.12644V3.31122H4.22908C3.54005 3.31122 2.99778 2.66887 3.16987 1.95148C3.24567 1.63555 3.47371 1.36624 3.76865 1.22991C4.17367 1.04271 4.62231 1.10281 4.96247 1.4107L6.83742 3.1101C6.83732 3.11558 6.83696 3.12096 6.83696 3.12644ZM13.8555 2.30908C13.8142 2.88525 13.2937 3.31128 12.7161 3.31128H10.163V3.12651C10.163 3.11997 10.1626 3.11349 10.1626 3.10695C10.5873 2.72193 11.5087 1.8868 12.0085 1.43381C12.2925 1.17639 12.6899 1.05623 13.0573 1.1658C13.5844 1.32305 13.894 1.77135 13.8555 2.30908Z M1.10867 7.74599V15.8764C1.10867 16.4888 1.60503 16.9851 2.21736 16.9851H7.39127V7.74599H1.10867Z M9.60867 7.74599V16.9851H14.7826C15.3949 16.9851 15.8913 16.4888 15.8913 15.8764V7.74599H9.60867Z"></path></svg><div class="tvlOr" style="top: -40px; left: -63px;">Нет новых подарков<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="left: calc(50% - 10px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.41266 7.51954C5.57195 9.49507 8.42815 9.49507 9.58745 7.51954L14.0001 0H0Z" fill="#0F3159"></path></svg></div></div></div>
+</div>
+
+<script>
+    require(['layoutcontrols/userCounter'], function (userCounter) {
+        var messageModel = {
+            counterSelector: '.button-with-counter_message',
+            counterContentClass: 'button-with-counter__counter',
+            link: 'https://dnevnik.ru/soc/messenger/',
+            spamLink: 'https://dnevnik.ru/soc/messenger/?view=spam'
+        };
+
+       var notificationModel = {
+            counterSelector: '.button-with-counter_notification',
+            counterContentClass: 'button-with-counter__counter',
+            link: 'https://dnevnik.ru/invites'
+        };
+        
+        var kundalikPayModel = {
+            counterSelector: '.button-with-counter_kundalikpay',
+            counterContentClass: 'button-with-counter__counter',
+            link: 'https://dnevnik.ru/kundalikpay'
+        };
+        
+        userCounter(messageModel);
+        userCounter(notificationModel);
+        userCounter(kundalikPayModel);
+    });
+</script>
+<script>
+  window.notificationsAppSettings = {
+     apiUrl: "https://notifications.dnevnik.ru/api",
+     rootElementId: "ntf-notifications-root"
+  }
+</script>
+<script defer="" src="https://static.dnevnik.ru/client/notifications.js?v=972c3248"></script>
+<script defer="" src="https://static.dnevnik.ru/client/chat_notifications.js?v=f66bd221"></script>
+<link rel="stylesheet" href="https://static.dnevnik.ru/client/chat_notifications.css?v=ec379977" media="all" type="text/css">
+
+    <script defer="" src="https://static.dnevnik.ru/client/gift_notifications.js?v=3897dbd3"></script>
+    <link rel="stylesheet" href="https://static.dnevnik.ru/client/gift_notifications.css?v=6e55e2ba" media="all" type="text/css">
+    <script>
+        window.__GIFT_COUNTER__INITIAL__STATE__ = {"count":0,"url":"https://dnevnik.ru/gift/web?source=giftCounter&tabType=GiftTypes"};
+    </script>
+
+                    
+                </div>
+                <div class="page-header__panel-container_items" bis_skin_checked="1">
+                    
+                    <div class="page-header__panel-container page-header__panel-container_profile" bis_skin_checked="1">
+                        
+
+
+
+<div class="user-profile-box" data-test-id="user-profile-info" bis_skin_checked="1">
+    <div class="user-profile-box__info" bis_skin_checked="1">
+        <div class="user-profile-box__info_row user-profile-box__avatar" bis_skin_checked="1">
+            <img src="https://static.dnevnik.ru/images/avatars/user/a.s.jpg">
+        </div>
+        <div class="user-profile-box__info_row user-profile-box__info_row-content" bis_skin_checked="1">
+            <p class="user-profile-box__info_row-content user-profile-box__initials">Куракина.А.А</p>
+            <p class="user-profile-box__info_row-content user-profile-box__category">Ученик</p>
+        </div>
+        <div class="user-profile-box__info_row user-profile-box__tumbler" bis_skin_checked="1"></div>
+    </div>
+
+    
+
+<div class="dropdown-container" bis_skin_checked="1">
+
+<a href="https://dnevnik.ru/v2/user/user?user=1000015929249" title="Мой профиль" class="link link_dropdown-container-link link_ link_ ">
+    Мой профиль
+    
+</a>
+<a href="https://dnevnik.ru/v2/user/settings?user=1000015929249" title="Настройки" class="link link_dropdown-container-link link_ link_ ">
+    Настройки
+    
+</a>
+<a href="https://login.dnevnik.ru/logout" title="Выйти из Дневник.ру" class="link link_dropdown-container-link link_ link_box-sizing-content-box " id="profile_logout">
+    Выйти из Dневник
+    
+</a></div><script>require(['DropdownContainer/DropdownContainer'], function () { for(var i = 0, l = arguments.length; i < l; i += 1) { arguments[i](JSON.parse('\x7b\x22tumblerClass\x22\x3a\x22user-profile-box\x22,\x22activationClasses\x22\x3a\x5b\x22user-profile-box__info\x22,\x22dropdown-container\x22\x5d\x7d')); } });</script>
+    <form name="profileLogout" action="https://login.dnevnik.ru/logout" method="post">
+    </form>
+</div>
+<script>
+    $('#profile_logout').click(function () {
+        document.profileLogout.submit();
+        return false;
+    });
+</script>
+
+
+
+
+
+
+                    </div>
+                    <div class="page-header__panel-container page-header__panel-container_end" bis_skin_checked="1">
+                        
+
+<div class="header-links" bis_skin_checked="1">
+    <a class="header-links__link" href="https://support.dnevnik.ru" target="_blank">Помощь</a>
+    
+        <form name="logout" action="https://login.dnevnik.ru/logout" method="post">
+            <a class="header-links__link" onclick="document.logout.submit();" href="#">Выход</a>
+        </form>
+    
+</div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear" bis_skin_checked="1">
+            <ul class="header-menu"><li class="header-menu__item"><a class="header-menu__link" href="https://dnevnik.ru/pro?utm_source=header" title="" data-test-id="Оплата PRO">Оплата PRO </a></li><li class="header-menu__item header-menu__item_active header-menu__item_current"><a class="header-menu__link" href="https://dnevnik.ru/userfeed" target="_self" title="" data-test-id="Образование">Образование </a><ul class="header-submenu header-submenu_active" style="z-index: 0; top: 45px;"><li class="header-submenu__item"><a class="header-submenu__link" href="https://schools.dnevnik.ru/v2/school" title="" data-test-id="Моя школа">Моя школа </a></li><li class="header-submenu__item"><a class="header-submenu__link" href="https://schools.dnevnik.ru/v2/class" title="" data-test-id="Мой класс">Мой класс </a></li><li class="header-submenu__item"><a class="header-submenu__link" href="https://dnevnik.ru/marks" title="" data-test-id="Успеваемость">Успеваемость </a></li><li class="header-submenu__item"><a class="header-submenu__link" href="https://schools.dnevnik.ru/v2/schedules/" title="" data-test-id="Расписание">Расписание </a></li><li class="header-submenu__item"><a class="header-submenu__link" href="https://schools.dnevnik.ru/v2/homework" title="" data-test-id="Домашние задания">Домашние задания </a></li><li class="header-submenu__item" id="main-menu_edu_vk-messenger"><a class="header-submenu__link" href="#" title="" data-test-id="Чаты"><img src="https://static.dnevnik.ru/images/chat/chat.svg" class="header-submenu__link-icon">Чаты </a></li><ul class="header-submenu__item header-submenu__more-item" style="display: none;"><div class="header-submenu__more-item-name" bis_skin_checked="1">Ещё</div></ul></ul></li><li class="header-menu__item"><a class="header-menu__link" href="https://dnevnik.ru/communities?source=header" title="" data-test-id="Общение">Общение </a><ul class="header-submenu"><li class="header-submenu__item"><a class="header-submenu__link" href="https://dnevnik.ru/communities?source=header" title="" data-test-id="Сообщества">Сообщества </a></li><li class="header-submenu__item"><a class="header-submenu__link" href="https://dnevnik.ru/gift/web?source=menu&amp;tabType=GiftTypes" title="" data-test-id="Подарки">Подарки </a></li><ul class="header-submenu__item header-submenu__more-item"><div class="header-submenu__more-item-name" bis_skin_checked="1">Ещё</div></ul></ul></li><li class="header-menu__item"><a class="header-menu__link" href="https://dnevnik.ru:443/v2/soc/apps/?utm_source=dnevnik&amp;utm_medium=mainnav&amp;utm_campaign=button" title="" data-test-id="Приложения">Приложения </a></li><li class="header-menu__item header-menu__item_ext"><div class="header-menu__banner-container" bis_skin_checked="1"><div class="0576189c7f1a4d8d9e1c97bc948b9d6c asyncMenuButtonBanner" bis_skin_checked="1"></div><script>$(document).ready(function () {let container=$(".0576189c7f1a4d8d9e1c97bc948b9d6c");if(container.css("display")!=="none"){container.html($(".0576189c7f1a4d8d9e1c97bc948b9d6c > div").text());} });</script></div></li></ul><script type="text/javascript">require(['analytics/menuYaMetrika']);</script>
+        </div>
+    </div>
+    <script type="text/javascript">
+        require(['layoutcontrols/menu', 'analytics/urlTracker', 'ab/yandexMetrikaTracker'], function (menu, urlTracker, yandexMetrikaTracker) {
+
+             var model = {
+                 newMessages: "Новых сообщений",
+                 noMessages: "Нет новых сообщений",
+                 newFriendRequests: "Новых друзей",
+                 noFriendRequests: "Нет новых друзей",
+                 newGroups: "Новых приглашений",
+                 noGroups: "Нет новых приглашений",
+                 Account: "Личный счёт",
+                 newEvents: "Новых событий",
+                 noEvents: "Нет новых событий",
+             };
+
+             menu(model);
+
+             var urlTrackerModel = {
+                 elementSelector: 'li#AppCenter>a',
+                 urlPrefix: '/virtual/center',
+                 trackingConditions: 'click'
+             };
+             urlTracker(urlTrackerModel);
+
+             yandexMetrikaTracker({ action: 'reachGoal' });
+        });
+
+        require(['common/adblockDummyInsert'], function (adblockDummyInsert) {
+            adblockDummyInsert();
+        });
+    </script>
+
+    </div>
+    
+
+
+<script>
+</script>
+    
+
+<style>
+    @media screen and (min-width: 620px) {
+        .asyncTop970x200Banner {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+        .asyncBackgroundBanner {
+            display: none;
+        }
+
+        .asyncTop970x200Banner {
+            height: auto;
+            width: auto;
+        }
+
+        .banner970 {
+            height: auto;
+            width: auto;
+        }
+    }
+</style>
+
+<link rel="stylesheet" href="https://static.dnevnik.ru/client/user_start_page.css?v=9295fc16" type="text/css">
+
+
+<div id="user-start-page" bis_skin_checked="1"><div class="VC9lf"><div class="GY6ZE"><div class="lV4gJ BmL31"><div class="i_2he"><div class="MF8i6"><span class="DeR8V rK7Sc CzAYf">КА</span></div><div class="O1OyQ"><div class="DvC8c">Алина Куракина</div><div class="U4XjY">8Г, ГБОУ "ШКОЛА №7162 гор.Кострома"</div></div><div class="vfvKO"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(45 4 3)"><path fill="#0087c0" d="M6.805-1a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div></div></div><div class="FMrab"><div class="rn5fR">Успеваемость</div><div class="leaD4"><div class="lAJms"><div class="kPFxt"><div class="Q52cx"><div class="O4Y1L"><div class="NmbeA"></div><div class="NmbeA"><div class="H1xuJ">17 сентября</div><div class="Gsovu"><div class="Wgxhi" data-mark-id="2400786346424813623"><div class="h26OT Tnfcj"><div class="VDEyi csmj7"></div>3</div><div></div><div class="qZR20">Музыка</div><div class="UDZhX">Пр-т⁨ ⁩за ⁨9 сент.⁩</div></div></div></div></div><div class="qRJBv GICJz"><div class="c8gBb"><div></div></div></div></div></div></div></div><div class="YyJMC"><div class="w8yEW"></div><div>Нажмите на оценку, чтобы увидеть рейтинг в классе</div></div></div><div class="BPm32"></div><div class="NfpGu"><div class="GsU2Y"><div class="Src_F"><div class="EZN87">сейчас ⁨6⁩ ⁨урок⁩</div><div class="xWioW">16:40-17:20. Англ. язык</div></div><div class="Src_F"><div class="EZN87">4</div><div class="xWioW">⁨домашних задания⁩ на завтра</div></div></div><div class="QXbNH oPNp0"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(225 6 4)"><path fill="#0087c0" d="M6.805-1a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="mfHwq"><div class="YFgHr"><div class="jyOdp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><g><g><path d="M7.488 16a.442.442 0 0 0 .211-.108c.117-.144.117-.288 0-.433L1.02 8.29h16.665c.187-.025.293-.12.316-.289-.047-.192-.152-.3-.316-.324H1.02L7.7.505c.116-.145.116-.289 0-.433a.345.345 0 0 0-.423 0L.07 7.784v.036l-.035.036A.602.602 0 0 0 0 8a.281.281 0 0 1 .035.108l.035.036v.072l7.207 7.676c.07.072.141.108.211.108z"></path></g></g></svg></div><div class="UuDtC">23 сент., 
+          вторник</div><div data-test-id="next-date-schedule" class="ltz6T"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><g><g><path d="M10.512 16a.442.442 0 0 1-.211-.108c-.117-.144-.117-.288 0-.433l6.68-7.17H.315C.13 8.263.023 8.168 0 8c.047-.192.152-.3.316-.324H16.98L10.3.505c-.116-.145-.116-.289 0-.433a.345.345 0 0 1 .423 0l7.207 7.712v.036l.035.036c.023.072.035.12.035.144a.281.281 0 0 0-.035.108l-.035.036v.072l-7.207 7.676c-.07.072-.141.108-.211.108z"></path></g></g></svg></div></div><div class="pgagW"></div><div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨1⁩ ⁨УРОК ⁨, ⁨31⁩⁩⁩</div><div class="gq89N">12:20 - 13:00</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">История</div><div class="wZsQ0">Административная диагностическая работа</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">Подготовиться к входной контрольной работе</div></div></div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨2⁩ ⁨УРОК ⁨, ⁨22⁩⁩⁩</div><div class="gq89N">13:20 - 14:00</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">Музыка</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">выучить записи в тетр</div></div></div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨3⁩ ⁨УРОК ⁨, ⁨24⁩⁩⁩</div><div class="gq89N">14:10 - 14:50</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">Химия</div><div class="wZsQ0">Химические элементы. Знаки (символы) химических элементов.</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">п. 6-7, повторить записи в тетрадях.</div></div></div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨4⁩ ⁨УРОК ⁨, ⁨25⁩⁩⁩</div><div class="gq89N">15:00 - 15:40</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">Алгебра</div><div class="wZsQ0">Контрольная работа № 1 «Рациональные дроби»</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">П.1-4, №87(а,в,д), 90, 91, стр.21-25; №80, 82, 85, стр.24-25</div></div></div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨5⁩ ⁨УРОК ⁨, ⁨25⁩⁩⁩</div><div class="gq89N">15:50 - 16:30</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">Алгебра</div><div class="wZsQ0">Умножение дробей. Возведение дроби в степень</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">Нет домашнего задания</div></div></div><div class="tyRId ujf4P"><div class="fEJxg"><div class="wxwTB">⁨6⁩ ⁨УРОК ⁨, ⁨38⁩⁩⁩</div><div class="gq89N">16:40 - 17:20</div><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><g><g transform="rotate(-45 3 2)"><path fill="#0087c0" d="M3.66 3a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 0 1 0-2h5z"></path></g></g></svg></div><div class="x2S7M"><div class="Hf2k4"><div class="BuUWL">Англ. язык</div><div class="wZsQ0">Словообразование/фразовый глагол to get.Грамматический практикум.</div></div><div class="n0QJN"></div></div><div class="_l9Bn"><div class="xkZpS">Выучить правило GR 1-3 Present Tenses, стр. 14 №1,2 (письменно)</div></div></div></div></div></div><div></div><div class="BKnTg"><div class="w0bQ2"><p class="IXoqd">События</p></div><div class="i4vR3"><div class="JVceP" style="transform: translateX(0px);"><div class="Fs5IK "><div class="UC25C"><div class="E3vLN"><div class="FcQxj"><div class="ZUnE_"><span class="suIha"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4224_11105)"><path d="M0.833333 6.25H4.58333V10H2.91667C2.36413 10 1.83423 9.78051 1.44353 9.38981C1.05283 8.9991 0.833333 8.4692 0.833333 7.91667V6.25ZM10 4.58333C10 4.80435 9.9122 5.01631 9.75592 5.17259C9.59964 5.32887 9.38768 5.41667 9.16667 5.41667H5.41667V3.73208C5.27667 3.74292 5.13708 3.75 5 3.75C4.86292 3.75 4.72333 3.74292 4.58333 3.73208V5.41667H0.833333C0.61232 5.41667 0.400358 5.32887 0.244078 5.17259C0.0877974 5.01631 0 4.80435 0 4.58333C0 4.14131 0.175595 3.71738 0.488155 3.40482C0.800716 3.09226 1.22464 2.91667 1.66667 2.91667H2.39083C2.15525 2.709 1.96825 2.45203 1.8431 2.164C1.71795 1.87597 1.65771 1.56392 1.66667 1.25C1.66667 1.13949 1.71057 1.03351 1.78871 0.955372C1.86685 0.877232 1.97283 0.833333 2.08333 0.833333C2.19384 0.833333 2.29982 0.877232 2.37796 0.955372C2.4561 1.03351 2.5 1.13949 2.5 1.25C2.5 2.3425 3.48792 2.72083 4.23917 2.85042C3.96188 2.35877 3.79496 1.81265 3.75 1.25C3.75 0.918479 3.8817 0.600537 4.11612 0.366116C4.35054 0.131696 4.66848 0 5 0C5.33152 0 5.64946 0.131696 5.88388 0.366116C6.1183 0.600537 6.25 0.918479 6.25 1.25C6.20504 1.81265 6.03812 2.35877 5.76083 2.85042C6.51208 2.72083 7.5 2.3425 7.5 1.25C7.5 1.13949 7.5439 1.03351 7.62204 0.955372C7.70018 0.877232 7.80616 0.833333 7.91667 0.833333C8.02717 0.833333 8.13315 0.877232 8.21129 0.955372C8.28943 1.03351 8.33333 1.13949 8.33333 1.25C8.34229 1.56392 8.28205 1.87597 8.1569 2.164C8.03175 2.45203 7.84475 2.709 7.60917 2.91667H8.33333C8.77536 2.91667 9.19928 3.09226 9.51184 3.40482C9.8244 3.71738 10 4.14131 10 4.58333ZM4.58333 1.25C4.63363 1.69284 4.77553 2.12038 5 2.50542C5.22447 2.12038 5.36637 1.69284 5.41667 1.25C5.41667 1.13949 5.37277 1.03351 5.29463 0.955372C5.21649 0.877232 5.11051 0.833333 5 0.833333C4.88949 0.833333 4.78351 0.877232 4.70537 0.955372C4.62723 1.03351 4.58333 1.13949 4.58333 1.25ZM5.41667 10H7.08333C7.35692 10 7.62783 9.94611 7.88059 9.84142C8.13335 9.73672 8.36302 9.58326 8.55647 9.38981C8.74993 9.19635 8.90339 8.96669 9.00808 8.71392C9.11278 8.46116 9.16667 8.19025 9.16667 7.91667V6.25H5.41667V10Z" fill="white"></path></g><defs><clipPath id="clip0_4224_11105"><rect width="10" height="10" fill="white"></rect></clipPath></defs></svg></span><span class="BxTEL">Подарки</span></div></div><div class="O_yp1 "><div>Международный день жестовых языков</div></div></div><div class="GGgW4"><img src="https://b5.csdnevnik.ru/02cb02226cc142908c4c53b357b7cea5.png" alt=""></div></div><div class="sVWvE">Перейти в подарки</div></div><div class="Fs5IK "><div class="UC25C"><div class="E3vLN"><div class="FcQxj"><div class="ZUnE_"><span class="suIha"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4224_11105)"><path d="M0.833333 6.25H4.58333V10H2.91667C2.36413 10 1.83423 9.78051 1.44353 9.38981C1.05283 8.9991 0.833333 8.4692 0.833333 7.91667V6.25ZM10 4.58333C10 4.80435 9.9122 5.01631 9.75592 5.17259C9.59964 5.32887 9.38768 5.41667 9.16667 5.41667H5.41667V3.73208C5.27667 3.74292 5.13708 3.75 5 3.75C4.86292 3.75 4.72333 3.74292 4.58333 3.73208V5.41667H0.833333C0.61232 5.41667 0.400358 5.32887 0.244078 5.17259C0.0877974 5.01631 0 4.80435 0 4.58333C0 4.14131 0.175595 3.71738 0.488155 3.40482C0.800716 3.09226 1.22464 2.91667 1.66667 2.91667H2.39083C2.15525 2.709 1.96825 2.45203 1.8431 2.164C1.71795 1.87597 1.65771 1.56392 1.66667 1.25C1.66667 1.13949 1.71057 1.03351 1.78871 0.955372C1.86685 0.877232 1.97283 0.833333 2.08333 0.833333C2.19384 0.833333 2.29982 0.877232 2.37796 0.955372C2.4561 1.03351 2.5 1.13949 2.5 1.25C2.5 2.3425 3.48792 2.72083 4.23917 2.85042C3.96188 2.35877 3.79496 1.81265 3.75 1.25C3.75 0.918479 3.8817 0.600537 4.11612 0.366116C4.35054 0.131696 4.66848 0 5 0C5.33152 0 5.64946 0.131696 5.88388 0.366116C6.1183 0.600537 6.25 0.918479 6.25 1.25C6.20504 1.81265 6.03812 2.35877 5.76083 2.85042C6.51208 2.72083 7.5 2.3425 7.5 1.25C7.5 1.13949 7.5439 1.03351 7.62204 0.955372C7.70018 0.877232 7.80616 0.833333 7.91667 0.833333C8.02717 0.833333 8.13315 0.877232 8.21129 0.955372C8.28943 1.03351 8.33333 1.13949 8.33333 1.25C8.34229 1.56392 8.28205 1.87597 8.1569 2.164C8.03175 2.45203 7.84475 2.709 7.60917 2.91667H8.33333C8.77536 2.91667 9.19928 3.09226 9.51184 3.40482C9.8244 3.71738 10 4.14131 10 4.58333ZM4.58333 1.25C4.63363 1.69284 4.77553 2.12038 5 2.50542C5.22447 2.12038 5.36637 1.69284 5.41667 1.25C5.41667 1.13949 5.37277 1.03351 5.29463 0.955372C5.21649 0.877232 5.11051 0.833333 5 0.833333C4.88949 0.833333 4.78351 0.877232 4.70537 0.955372C4.62723 1.03351 4.58333 1.13949 4.58333 1.25ZM5.41667 10H7.08333C7.35692 10 7.62783 9.94611 7.88059 9.84142C8.13335 9.73672 8.36302 9.58326 8.55647 9.38981C8.74993 9.19635 8.90339 8.96669 9.00808 8.71392C9.11278 8.46116 9.16667 8.19025 9.16667 7.91667V6.25H5.41667V10Z" fill="white"></path></g><defs><clipPath id="clip0_4224_11105"><rect width="10" height="10" fill="white"></rect></clipPath></defs></svg></span><span class="BxTEL">Подарки</span></div></div><div class="O_yp1 "><div>Вы можете подарить подарки друзьям</div></div></div><div class="GGgW4"><img src="https://static.dnevnik.ru/images/feed_events/enter_gift_event.png" alt=""></div></div><div class="sVWvE">Перейти</div></div></div><button type="button" class="_cBIu _49cK" disabled=""><span class="PwJ6O">‹</span></button><button type="button" class="_cBIu dysdU"><span class="PwJ6O">›</span></button></div><div class="SqHyI"><div class="HNB8J zov8e"></div><div class="HNB8J "></div></div></div><div id="test"><div class="GY6ZE"><div class="Fy9Qq"><div><div class="582586779a584e40b14b5bce7869e83c asyncRight300X600Banner"><!--В <head> сайта один раз добавьте код загрузчика-->
+<script>window.yaContextCb = window.yaContextCb || []</script>
+<script src="https://yandex.ru/ads/system/context.js" async=""></script>
+
+<!--AdFox START-->
+<!--Dnevnik.ru-->
+<!--Площадка: Dnevnik.ru / main / 300*600-->
+<!--Категория: <не задана>-->
+<!--Тип баннера: 300*600-->
+<div id="adfox_16312779814479255"></div>
+<script>
+    window.yaContextCb.push(()=>{
+        Ya.adfoxCode.create({
+            ownerId: 222314,
+        containerId: 'adfox_16312779814479255',
+            params: {
+                p1: 'byksq',
+            p2: 'fsok',
+            puid1: '14',
+            puid2: 'M',
+            puid3: 'STUDENT',
+            puid4: '236',
+            puid5: 'N',
+            puid6: 'N',
+            puid7: '81:218952',
+            puid8: 'N',
+            puid9: 'ComprehensiveSchool',
+            puid10: 'N',
+            puid11: 'A',
+            puid12: 'N',
+            puid13: 'N',
+            puid14: 'N',
+            puid15: 'N',
+            puid16: 'ads_web_statistics',
+            puid17: '38G',
+            puid18: 'False',
+            puid19: '9G',
+            puid20: '8K',
+            puid21: 'N',
+            puid22: 'ru-RU',
+            puid23: '1000015929249',
+            puid24: 'N',
+            puid25: 'N',
+            puid26: ''
+            }
+        })
+    })
+</script></div></div></div></div></div></div><div class="QdrVr"><div class="clcgz"></div><div class="QTEbB">Здесь появятся объявления и новости</div></div></div></div>
+
+<script>
+window.__SURVEY_FORM_INITIAL_STATE__ = {"surveyForm":null,"surveyFormAnswerUrl":"https://dnevnik.ru/api/surveyFormAnswer","staticUrl":"https://static.dnevnik.ru/images/survey_form"};    window.__MOM_SAID_YES__INITIAL__STATE__ = {"absenceReasons":[{"value":0,"label":"По семейным обстоятельствам","messageLabel":"по семейным обстоятельствам"},{"value":1,"label":"По причине болезни","messageLabel":"по причине болезни"},{"value":2,"label":"По состоянию здоровья","messageLabel":"по состоянию здоровья"},{"value":3,"label":"В связи с посещением врача","messageLabel":"в связи с посещением врача"},{"value":4,"label":"В связи с отпуском","messageLabel":"в связи с отпуском"},{"value":5,"label":"Диспансеризация в лечебное учреждение","messageLabel":"в связи с диспансеризацией в лечебное учреждение"},{"value":6,"label":"По причине плохого самочувствия","messageLabel":"по причине плохого самочувствия"},{"value":7,"label":"По причине переезда в другой город","messageLabel":"по в связи с переездом в другой город"},{"value":8,"label":"В связи с морозами, холодами","messageLabel":"в связи с морозами, холодами"},{"value":9,"label":"Посещение стоматолога","messageLabel":"в связи с посещением стоматолога"},{"value":10,"label":"На время санаторного лечения","messageLabel":"на время санаторного лечения"},{"value":11,"label":"Другое","messageLabel":""}],"currentStudyYearFinishDate":"2026-07-31T00:00:00","isMsyPopupEnabled":false};
+    window.__USER__START__PAGE__INITIAL__STATE__ = {"userSchedule":{"apiUrl":"https://dnevnik.ru/api/userfeed","children":[{"schoolId":"1000025137238","groupId":"2397015412383590502","personId":"1000025908188","schedule":{"days":[{"date":"1758585600","utcOffset":180,"hasImportantWork":false,"dayHomeworksProgress":{"totalLessonsWithHomeworksCount":5,"completedLessonsWithHomeworksCount":3},"lessons":[{"id":"2399362719385006174","number":1,"place":"31","startTime":"1758619200","endTime":"1758621600","hours":{"startHour":"12","startMinute":"20","endHour":"13","endMinute":"00"},"isCanceled":false,"theme":"Административная диагностическая работа","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122624","name":"История","knowledgeArea":"SocialStudies"},"importantWorks":[],"homework":{"id":null,"text":"Подготовиться к входной контрольной работе","isCompleted":false,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006064","number":2,"place":"22","startTime":"1758622800","endTime":"1758625200","hours":{"startHour":"13","startMinute":"20","endHour":"14","endMinute":"00"},"isCanceled":false,"theme":"","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122634","name":"Музыка","knowledgeArea":"Art"},"importantWorks":[],"homework":{"id":null,"text":"выучить записи в тетр","isCompleted":false,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006270","number":3,"place":"24","startTime":"1758625800","endTime":"1758628200","hours":{"startHour":"14","startMinute":"10","endHour":"14","endMinute":"50"},"isCanceled":false,"theme":"Химические элементы. Знаки (символы) химических элементов.","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122632","name":"Химия","knowledgeArea":"NaturalScience"},"importantWorks":[],"homework":{"id":null,"text":"п. 6-7, повторить записи в тетрадях.","isCompleted":true,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006143","number":4,"place":"25","startTime":"1758628800","endTime":"1758631200","hours":{"startHour":"15","startMinute":"00","endHour":"15","endMinute":"40"},"isCanceled":false,"theme":"Контрольная работа № 1 «Рациональные дроби»","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122619","name":"Алгебра","knowledgeArea":"Mathematics"},"importantWorks":[],"homework":{"id":null,"text":"П.1-4, №87(а,в,д), 90, 91, стр.21-25; №80, 82, 85, стр.24-25","isCompleted":true,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006278","number":5,"place":"25","startTime":"1758631800","endTime":"1758634200","hours":{"startHour":"15","startMinute":"50","endHour":"16","endMinute":"30"},"isCanceled":false,"theme":"Умножение дробей. Возведение дроби в степень","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122619","name":"Алгебра","knowledgeArea":"Mathematics"},"importantWorks":[],"homework":null,"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006182","number":6,"place":"38","startTime":"1758634800","endTime":"1758637200","hours":{"startHour":"16","startMinute":"40","endHour":"17","endMinute":"20"},"isCanceled":false,"theme":"Словообразование/фразовый глагол to get.Грамматический практикум.","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122647","name":"Англ. язык","knowledgeArea":"ForeignLanguage"},"importantWorks":[],"homework":{"id":null,"text":"Выучить правило GR 1-3 Present Tenses, стр. 14 №1,2 (письменно)","isCompleted":true,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null}],"sorSochs":[]},{"date":"1758672000","utcOffset":180,"hasImportantWork":false,"dayHomeworksProgress":{"totalLessonsWithHomeworksCount":4,"completedLessonsWithHomeworksCount":1},"lessons":[{"id":"2399362719385006135","number":1,"place":"37","startTime":"1758705600","endTime":"1758708000","hours":{"startHour":"12","startMinute":"20","endHour":"13","endMinute":"00"},"isCanceled":false,"theme":"Питание и пищеварение у позвоночных животных. Практическая работа «Изучение способов поглощения пищи у животных»","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122630","name":"Биология","knowledgeArea":"NaturalScience"},"importantWorks":[],"homework":{"id":null,"text":"Стр. 17-19\n\n","isCompleted":false,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006190","number":2,"place":"19а","startTime":"1758709200","endTime":"1758711600","hours":{"startHour":"13","startMinute":"20","endHour":"14","endMinute":"00"},"isCanceled":false,"theme":"Тепловое расширение и сжатие","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122631","name":"Физика","knowledgeArea":"NaturalScience"},"importantWorks":[],"homework":{"id":null,"text":"п. 10 (читать и ответить на вопросы в конце параграфа устно)","isCompleted":true,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006033","number":3,"place":"ф/к","startTime":"1758712200","endTime":"1758714600","hours":{"startHour":"14","startMinute":"10","endHour":"14","endMinute":"50"},"isCanceled":false,"theme":"","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122638","name":"Физкультура","knowledgeArea":"PhysicalCulture"},"importantWorks":[],"homework":null,"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006111","number":4,"place":"23","startTime":"1758715200","endTime":"1758717600","hours":{"startHour":"15","startMinute":"00","endHour":"15","endMinute":"40"},"isCanceled":false,"theme":"А.С. Пушкин. Стихотворения (не менее двух).  Например, «К Чаадаеву», «Анчар» и другие. Гражданские мотивы в лирике поэта. Художественное мастерство и особенности лирического героя","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122646","name":"Литература","knowledgeArea":"RussianLanguageAndLiterature"},"importantWorks":[],"homework":{"id":null,"text":"стр. 24-40 читать, анализ прочитанного письменно","isCompleted":false,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006254","number":5,"place":"23","startTime":"1758718200","endTime":"1758720600","hours":{"startHour":"15","startMinute":"50","endHour":"16","endMinute":"30"},"isCanceled":false,"theme":"А.С. Пушкин. «Маленькие трагедии» (одна пьеса по выбору). Например, «Моцарт и Сальери», «Каменный гость». Особенности драматургии А.С. Пушкина. Тематика и проблематика, своеобразие конфликта. Характеристика главных героев. Нравственные проблемы в пьесе","meeting":null,"smartWorkInfo":null,"subject":{"id":"2280925276756122646","name":"Литература","knowledgeArea":"RussianLanguageAndLiterature"},"importantWorks":[],"homework":null,"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null},{"id":"2399362719385006238","number":6,"place":"25","startTime":"1758721200","endTime":"1758723600","hours":{"startHour":"16","startMinute":"40","endHour":"17","endMinute":"20"},"isCanceled":false,"theme":"Классические модели теории вероятности. Монета и игральная кость","meeting":null,"smartWorkInfo":null,"subject":{"id":"2281230073405250656","name":"Вероятн. и стат.","knowledgeArea":"Mathematics"},"importantWorks":[],"homework":{"id":null,"text":"§4","isCompleted":false,"workIsAttachRequired":false,"attachments":[],"userAttachments":[],"lessonId":null},"smartHomeworks":[],"hasAttachment":false,"workMarks":[],"isEmpty":false,"comment":null}],"sorSochs":[]}],"chatStub":null}}],"currentChild":{"hasSchedule":true,"schoolId":"1000025137238","groupId":"2397015412383590502","personId":"1000025908188","schoolType":"Regular"},"currentDate":"1758585600"},"userMarks":{"children":[{"schoolId":"1000025137238","groupId":"2397015412383590502","personId":"1000025908188","ratingsMarksInfo":{"paywallUrl":"https://dnevnik.ru/pro?utm_source=mark_userfeed&isRatingSource=True"},"marks":[{"date":"1758204718","lessonDate":"1758153600","subject":{"id":"2280925276756122631","name":"Физика","knowledgeArea":"NaturalScience","subjectMood":null},"markType":"Mark","markTypeText":"Самостоятельная работа","shortMarkTypeText":"С/Р","isFinal":false,"marks":[{"id":"2401140629687135016","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399363183241480281","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758204560","lessonDate":"1757548800","subject":{"id":"2280925276756122631","name":"Физика","knowledgeArea":"NaturalScience","subjectMood":null},"markType":"Mark","markTypeText":"Домашняя работа","shortMarkTypeText":"Д/Р","isFinal":false,"marks":[{"id":"2401139951082301626","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399363183241480294","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758199989","lessonDate":"1758153600","subject":{"id":"2280925276756122622","name":"Обществознание","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Домашняя работа","shortMarkTypeText":"Д/Р","isFinal":false,"marks":[{"id":"2401120318786770895","value":"5","maxValue":null,"mood":"Good"}],"workId":"2401120301606954037","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758199543","lessonDate":"1758153600","subject":{"id":"2280925276756122622","name":"Обществознание","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Урок","shortMarkTypeText":"УР","isFinal":false,"marks":[{"id":"2401118403231354166","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399363161766643746","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758190684","lessonDate":"1757980800","subject":{"id":"2280925276756122632","name":"Химия","knowledgeArea":"NaturalScience","subjectMood":null},"markType":"Mark","markTypeText":"Стартовая контрольная работа","shortMarkTypeText":"СКР","isFinal":false,"marks":[{"id":"2401080354116084701","value":"2","maxValue":null,"mood":"Bad"}],"workId":"2401080276806695949","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758122230","lessonDate":"1757376000","subject":{"id":"2280925276756122634","name":"Музыка","knowledgeArea":"Art","subjectMood":null},"markType":"Mark","markTypeText":"Проект","shortMarkTypeText":"Пр-т","isFinal":false,"marks":[{"id":"2400786346424813623","value":"3","maxValue":null,"mood":"Average"}],"workId":"2399363148881741809","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758115948","lessonDate":"1758067200","subject":{"id":"2280925276756122646","name":"Литература","knowledgeArea":"RussianLanguageAndLiterature","subjectMood":null},"markType":"Mark","markTypeText":"Сочинение","shortMarkTypeText":"СОЧ","isFinal":false,"marks":[{"id":"2400759365440300390","value":"4","maxValue":null,"mood":"Good"},{"id":"2400759365440300391","value":"3","maxValue":null,"mood":"Average"}],"workId":"2399363105932068813","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758054351","lessonDate":"1757980800","subject":{"id":"2280925276756122619","name":"Алгебра","knowledgeArea":"Mathematics","subjectMood":null},"markType":"Mark","markTypeText":"Ответ на уроке","shortMarkTypeText":"ОТВ","isFinal":false,"marks":[{"id":"2400494808339725649","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399362813874292336","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758044410","lessonDate":"1757980800","subject":{"id":"2280925276756122647","name":"Англ. язык","knowledgeArea":"ForeignLanguage","subjectMood":null},"markType":"Mark","markTypeText":"Ответ на уроке","shortMarkTypeText":"ОТВ","isFinal":false,"marks":[{"id":"2400452112069823675","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399364025055070529","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758025980","lessonDate":"1757980800","subject":{"id":"2280925276756122624","name":"История","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Урок","shortMarkTypeText":"УР","isFinal":false,"marks":[{"id":"2400372955822555422","value":"5","maxValue":null,"mood":"Good"}],"workId":"2400372637994998411","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758025918","lessonDate":"1757980800","subject":{"id":"2280925276756122624","name":"История","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Проверочная работа","shortMarkTypeText":"ПР","isFinal":false,"marks":[{"id":"2400372689534648256","value":"5","maxValue":null,"mood":"Good"}],"workId":"2399363093047166882","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1758019276","lessonDate":"1757980800","subject":{"id":"2280925276756122632","name":"Химия","knowledgeArea":"NaturalScience","subjectMood":null},"markType":"Mark","markTypeText":"Практическая работа","shortMarkTypeText":"П/Р","isFinal":false,"marks":[{"id":"2400344162361822782","value":"4","maxValue":null,"mood":"Good"}],"workId":"2399363196126382219","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1757942644","lessonDate":"1757635200","subject":{"id":"2280925276756122623","name":"География","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Самостоятельная работа","shortMarkTypeText":"С/Р","isFinal":false,"marks":[{"id":"2400015030428036183","value":"3","maxValue":null,"mood":"Average"}],"workId":"2400014978888407277","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1757942635","lessonDate":"1757635200","subject":{"id":"2280925276756122623","name":"География","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Домашняя работа","shortMarkTypeText":"Д/Р","isFinal":false,"marks":[{"id":"2400014991773330448","value":"3","maxValue":null,"mood":"Average"}],"workId":"2400014966003505359","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null},{"date":"1757942156","lessonDate":"1757894400","subject":{"id":"2280925276756122624","name":"История","knowledgeArea":"SocialStudies","subjectMood":null},"markType":"Mark","markTypeText":"Домашняя работа","shortMarkTypeText":"Д/Р","isFinal":false,"marks":[{"id":"2400012934483993253","value":"5","maxValue":null,"mood":"Good"}],"workId":"2400012771275215069","number":0,"periodId":"1","sectionId":"0","analyticsPeriod":null}],"marksIndicators":[]}],"currentChild":{"hasSchedule":true,"schoolId":"1000025137238","groupId":"2397015412383590502","personId":"1000025908188","schoolType":"Regular"}},"userContext":{"contextPersons":[{"userId":"1000015929249","personId":"1000025908188","firstName":"Эмир","middleName":"Мухамедович","lastName":"Афасижев","userAge":14,"avatarUrl":null,"school":{"id":"1000025137238","name":"ГБОУ ДАТ \"СОЛНЕЧНЫЙ ГОРОД\"","type":"Regular","isOo":true,"isNpoSpo":false,"avatarUrl":"https://b3.csdnevnik.ru/2024/User/10/31/796fc48558ec414a8e829e98533ce0ba.png?d=20241031125253","pageUrl":"https://schools.dnevnik.ru/v2/school?school=1000025137238","regionIds":[9515]},"group":{"id":"2397015412383590502","name":"8а","pageUrl":"https://schools.dnevnik.ru/v2/class?class=2397015412383590502","isCriteriaJournalType":false,"classTeacherUserId":"1000015848378","classTeacherChatUrl":"https://dnevnik.ru/chat/user_1000015848378@xmpp.dnevnik.ru","classTeacherJid":"user_1000015848378@xmpp.dnevnik.ru","groupStaffPageUrl":"https://schools.dnevnik.ru/v2/class?class=2397015412383590502&view=members&group=staff","studyYear":2025,"parallel":8},"reportingPeriodGroup":{"id":"2396604852164760259","type":"Quarter","periods":[{"id":"2396604852164771079","number":1,"type":"Quarter","dateStart":"1762300800","dateFinish":"1766793600","studyYear":2025,"isCurrent":false},{"id":"2396604852164771080","number":2,"type":"Quarter","dateStart":"1768176000","dateFinish":"1774051200","studyYear":2025,"isCurrent":false},{"id":"2396604852164771078","number":0,"type":"Quarter","dateStart":"1756684800","dateFinish":"1761350400","studyYear":2025,"isCurrent":true},{"id":"2396604852164771081","number":3,"type":"Quarter","dateStart":"1774828800","dateFinish":"1779753600","studyYear":2025,"isCurrent":false}]},"classTeacherAvatarUrl":null,"classTeacherName":"Александр Владимирович","classTeacherChatId":"user_1000015848378@xmpp.dnevnik.ru","haveActiveSubscription":null,"classTeacherPeerId":null,"isMsyPopupAvailable":false,"isFemale":false,"groupName":"8а","journalLink":"https://dnevnik.ru/journal/school/1000025137238/group/2397015412383590502/week/23/9","schoolId":"1000025137238","groupId":"2397015412383590502","ratingsFeedWidget":null}],"currentContextPerson":{"userId":"1000015929249","personId":"1000025908188","firstName":"Эмир","middleName":"Мухамедович","lastName":"Афасижев","userAge":14,"avatarUrl":null,"school":{"id":"1000025137238","name":"ГБОУ ДАТ \"СОЛНЕЧНЫЙ ГОРОД\"","type":"Regular","isOo":true,"isNpoSpo":false,"avatarUrl":"https://b3.csdnevnik.ru/2024/User/10/31/796fc48558ec414a8e829e98533ce0ba.png?d=20241031125253","pageUrl":"https://schools.dnevnik.ru/v2/school?school=1000025137238","regionIds":[9515]},"group":{"id":"2397015412383590502","name":"8а","pageUrl":"https://schools.dnevnik.ru/v2/class?class=2397015412383590502","isCriteriaJournalType":false,"classTeacherUserId":"1000015848378","classTeacherChatUrl":"https://dnevnik.ru/chat/user_1000015848378@xmpp.dnevnik.ru","classTeacherJid":"user_1000015848378@xmpp.dnevnik.ru","groupStaffPageUrl":"https://schools.dnevnik.ru/v2/class?class=2397015412383590502&view=members&group=staff","studyYear":2025,"parallel":8},"reportingPeriodGroup":{"id":"2396604852164760259","type":"Quarter","periods":[{"id":"2396604852164771079","number":1,"type":"Quarter","dateStart":"1762300800","dateFinish":"1766793600","studyYear":2025,"isCurrent":false},{"id":"2396604852164771080","number":2,"type":"Quarter","dateStart":"1768176000","dateFinish":"1774051200","studyYear":2025,"isCurrent":false},{"id":"2396604852164771078","number":0,"type":"Quarter","dateStart":"1756684800","dateFinish":"1761350400","studyYear":2025,"isCurrent":true},{"id":"2396604852164771081","number":3,"type":"Quarter","dateStart":"1774828800","dateFinish":"1779753600","studyYear":2025,"isCurrent":false}]},"classTeacherAvatarUrl":null,"classTeacherName":"Александр Владимирович","classTeacherChatId":"user_1000015848378@xmpp.dnevnik.ru","haveActiveSubscription":null,"classTeacherPeerId":null,"isMsyPopupAvailable":false,"isFemale":false,"groupName":"8а","journalLink":"https://dnevnik.ru/journal/school/1000025137238/group/2397015412383590502/week/23/9","schoolId":"1000025137238","groupId":"2397015412383590502","ratingsFeedWidget":null},"userContextInfo":{"sex":"Male","userId":"1000015929249","personId":"1000025908188","firstName":"Эмир","middleName":"Мухамедович","lastName":"Афасижев","name":"Эмир Афасижев","avatarUrl":null,"avatarMediumUrl":"https://static.dnevnik.ru/images/avatars/user/a.m.jpg","isParent":false,"isStudent":true,"currentCultureCode":"ru-RU"},"groupParentsTopicEventKey":"school_1000025137238_group_2397015412383590502_parents","educationType":"Regular"},"userLinks":{"currentContext":{"personId":"1000025908188","userId":"0","schoolId":"1000025137238","groupId":"2397015412383590502","isParent":false,"feedPrefix":"dnevnik"}},"banners":{"right300X600":"&lt;div class=&quot;582586779a584e40b14b5bce7869e83c asyncRight300X600Banner&quot;&gt;&lt;div style=&quot;display:none;&quot;&gt;&amp;lt;!--В &amp;lt;head&amp;gt; сайта один раз добавьте код загрузчика--&amp;gt;\n&amp;lt;script&amp;gt;window.yaContextCb = window.yaContextCb || []&amp;lt;/script&amp;gt;\n&amp;lt;script src=&amp;quot;https://yandex.ru/ads/system/context.js&amp;quot; async&amp;gt;&amp;lt;/script&amp;gt;\n\n&amp;lt;!--AdFox START--&amp;gt;\n&amp;lt;!--Dnevnik.ru--&amp;gt;\n&amp;lt;!--Площадка: Dnevnik.ru / main / 300*600--&amp;gt;\n&amp;lt;!--Категория: &amp;lt;не задана&amp;gt;--&amp;gt;\n&amp;lt;!--Тип баннера: 300*600--&amp;gt;\n&amp;lt;div id=&amp;quot;adfox_16312779814479255&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;\n&amp;lt;script&amp;gt;\n    window.yaContextCb.push(()=&amp;gt;{\n        Ya.adfoxCode.create({\n            ownerId: 222314,\n        containerId: &amp;#39;adfox_16312779814479255&amp;#39;,\n            params: {\n                p1: &amp;#39;byksq&amp;#39;,\n            p2: &amp;#39;fsok&amp;#39;,\n            puid1: &amp;#39;14&amp;#39;,\n            puid2: &amp;#39;M&amp;#39;,\n            puid3: &amp;#39;STUDENT&amp;#39;,\n            puid4: &amp;#39;236&amp;#39;,\n            puid5: &amp;#39;N&amp;#39;,\n            puid6: &amp;#39;N&amp;#39;,\n            puid7: &amp;#39;81:218952&amp;#39;,\n            puid8: &amp;#39;N&amp;#39;,\n            puid9: &amp;#39;ComprehensiveSchool&amp;#39;,\n            puid10: &amp;#39;N&amp;#39;,\n            puid11: &amp;#39;A&amp;#39;,\n            puid12: &amp;#39;N&amp;#39;,\n            puid13: &amp;#39;N&amp;#39;,\n            puid14: &amp;#39;N&amp;#39;,\n            puid15: &amp;#39;N&amp;#39;,\n            puid16: &amp;#39;ads_web_statistics&amp;#39;,\n            puid17: &amp;#39;38G&amp;#39;,\n            puid18: &amp;#39;False&amp;#39;,\n            puid19: &amp;#39;9G&amp;#39;,\n            puid20: &amp;#39;8K&amp;#39;,\n            puid21: &amp;#39;N&amp;#39;,\n            puid22: &amp;#39;ru-RU&amp;#39;,\n            puid23: &amp;#39;1000015929249&amp;#39;,\n            puid24: &amp;#39;N&amp;#39;,\n            puid25: &amp;#39;N&amp;#39;,\n            puid26: &amp;#39;&amp;#39;\n            }\n        })\n    })\n&amp;lt;/script&amp;gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;$(document).ready(function () {let container=$(&quot;.582586779a584e40b14b5bce7869e83c&quot;);if(container.css(&quot;display&quot;)!==&quot;none&quot;){container.html($(&quot;.582586779a584e40b14b5bce7869e83c &gt; div&quot;).text());} });&lt;/script&gt;","mobile":"","partnersRight":"","vas":"","smartSorSoch":""},"feedEventsWidget":{"children":[{"groupId":"2397015412383590502","personId":"1000025908188","events":[{"type":"Gift","text":"Международный день жестовых языков","buttonUrl":"https://dnevnik.ru/gift/web?source=widgetHoliday_mobile_gift_every_holiday&tabType=GiftTypes&childPersonId=1000025908188","buttonText":"Перейти в подарки","person":null,"imageUrl":"https://b5.csdnevnik.ru/02cb02226cc142908c4c53b357b7cea5.png","finishDate":null,"yaMetrika":"Holiday_mobile_gift_every_holiday"},{"type":"Gift","text":"Вы можете подарить подарки друзьям","buttonUrl":"https://dnevnik.ru/gift/web?source=widgetEnterGift&tabType=GiftTypes&childPersonId=1000025908188","buttonText":"Перейти","person":null,"imageUrl":"https://static.dnevnik.ru/images/feed_events/enter_gift_event.png","finishDate":null,"yaMetrika":"EnterGift"}]}]},"analytics":{"personId":"1000025908188","userId":"1000015929249","schoolId":"1000025137238","groupId":"2397015412383590502","isCriteriaJournalType":false,"baseUrl":"https://dnevnik.statusapp.ru/iframe"},"analyticsEnabled":true,"urls":{"adUrl":"https://dnevnik.ru/ad","feedbackUrl":"","paymentPageUrl":"https://dnevnik.ru/billing/paidAccess/paymentPage","favoritesUrl":"https://dnevnik.ru/favorites","communitiesUrl":"https://dnevnik.ru/communities","marksUrl":"https://dnevnik.ru/marks?school=1000025137238&tab=period","moiVyzUrl":"https://moivyz.dnevnik.ru","smartUrl":"https://smart.dnevnik.ru"},"chatEnabled":false,"vkChatEnabled":true,"links":{"isUsefulLinksComponentVisible":false,"mobileUrlsEnabled":false,"mobileGooglePlayUrl":null,"mobileAppStoreUrl":null,"analyticsUrl":null},"environmentPrefix":"","experiments":{"userFeedMarksFinger":false,"postOnelove":false,"postReactions":false,"postReactionsClick":true,"postOnelike":false,"publicAutoSubscribe":false,"postSurvey":false,"share":false,"hideAds":true,"vuzSelection":false,"moiVyz":false,"vkMessenger":true,"isSmartHomeworkEnabled":false,"isStatusStubSegmentedEnabled":false,"isEventsWidget":true,"isStatisticsEntryPoints":false},"partnersRecommendationExperiments":[],"outsidePushBanner":null,"vocamateChatbotTutor":{"isAvailable":false,"chatId":null,"url":""},"bubzChatbotTutor":{"apiKey":null,"agentId":0,"localization":"ru","widgetShowDelaySeconds":0,"isAvailable":false,"chatId":null,"url":null},"yandexSearchIFrameUrl":null,"hasActiveMobileSubscription":false};
+    window.__TALK__INITIAL__STATE__ = null;
+    
+    window.__TALK__STUB__INITIAL__STATE__ = "https://dnevnik.ru/chat"
+    window.__MEDIA_WIDGET__INITIAL__STATE__ = {"apiUrl":"https://attachments.dnevnik.ru/api","maxUploadFileSize":"20971520","maxUploadFileSizeMessage":"(до 20 МБ)","gridPreviewExperiment":true};
+    window.__PUBLIC__CLUBS__INITIAL__STATE__ = {"clubId":null,"apiUrl":"https://dnevnik.ru/api/communities","environmentPrefix":"","defaultBackgroundImageUrl":"https://static.dnevnik.ru/images/publicClubs/default_background.png","metrika":{"page":"userfeed"}}
+    window.apiUrls = {
+        ...window.apiUrls,
+        feed: "https://dnevnik.ru/api/userfeed/posts",
+        posts: "https://dnevnik.ru/api/posts",
+        userLink: "https://dnevnik.ru/api/userfeed",
+        analytics: "https://dnevnik.statusapp.ru/iframe",
+        publicclub: "https://dnevnik.ru/api/communities",
+        userKeyValueStorage: "https://dnevnik.ru/api/storage",
+        pollsApiUrl: "https://dnevnik.ru/api/polls",
+        ratings: "https://dnevnik.ru/api/v2/webRatings",
+        vuz: "https://dnevnik.ru/api/v2/vuz",
+        domain: "https://dnevnik.ru",
+    }
+    window.__WORKS__INITIAL__STATE__ = {
+        apiUrl: "https://dnevnik.ru/api/v1/smart-integration",
+        smartUrl: "https://smart.dnevnik.ru"
+    };
+    window.__COMPLAINT__INITIAL__STATE__ = {"apiUrl":"https://dnevnik.ru/api"};
+
+        function fitToParent(element) {
+            var parent = element.parentElement;
+            parent.style.visibility = 'visible';
+            if (window.matchMedia('(max-width: 620px)').matches) {
+                var scale = parent.clientWidth / element.clientWidth;
+                var parentHeight = element.clientHeight * scale;
+                element.style.transformOrigin = "0 0";
+                element.style.transform = `scale(${ scale})`;
+                parent.style.height = `${ parentHeight} px`;
+            } else {
+                element.style.transform = 'none';
+                parent.style.height = `${ element.clientHeight} px`;
+            }
+        }
+
+        function resizeHeader() {
+            requestAnimationFrame(function() {
+                fitToParent(document.getElementsByClassName('page-header')[0]);
+            });
+        }
+
+        window.addEventListener("DOMContentLoaded", resizeHeader);
+        window.addEventListener("resize", resizeHeader);
+</script>
+<script src="https://static.dnevnik.ru/client/user_start_page.js?v=8a480d8f" type="text/javascript"></script><div id="markDetails_modal"></div><div id="tooltip_modal" class="BfEIc"></div><div id="tooltip_modal" class="BfEIc"></div><div id="tooltip_modal" class="BfEIc"></div><div id="tooltip_modal" class="BfEIc"></div>
+    <link rel="stylesheet" href="https://static.dnevnik.ru/client/survey_form.css?v=e786ac74" type="text/css">
+    <script src="https://static.dnevnik.ru/client/survey_form.js?v=eab33adb" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="page-footer page-footer_auth" id="" bis_skin_checked="1">
+            <div class="page-footer__banner" bis_skin_checked="1">
+                
+                
+            </div>
+        <div class="page-footer__content" bis_skin_checked="1">
+            <div class="page-footer__menu-layout " bis_skin_checked="1">
+                    <ul class="page-footer__menu">
+                        <li class="page-footer__menu-item">
+                            <a href="https://dnevnik.ru/about" title="Подробнее о Дневнике" class="page-footer__menu-link">О проекте</a>
+                        </li>
+                        <li class="page-footer__menu-item">
+                            <a href="https://dnevnik.ru/news" title="Пресс-центр" class="page-footer__menu-link">Новости</a>
+                        </li>
+                        <li class="page-footer__menu-item">
+                            <a href="https://support.dnevnik.ru/" target="_blank" title="Служба поддержки" class="page-footer__menu-link page-footer__menu-link_support">Служба поддержки</a>
+                        </li>
+                        <li class="page-footer__menu-item">
+                            <a href="https://dnevnik.ru/contacts" title="Служба поддержки" class="page-footer__menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                        <ul class="page-footer__social">
+                                <li class="page-footer__social-item">
+                                    <a href="https://t.me/dnevnik_ru" title="Дневник.ру в Telegram" class="page-footer__social-link page-footer__social-link_telegram" target="_blank"></a>
+                                </li>
+                                <li class="page-footer__social-item">
+                                    <a href="http://vkontakte.ru/club19853844" title="Дневник.ру в ВКонтакте" class="page-footer__social-link page-footer__social-link_vkontakte" target="_blank"></a>
+                                </li>
+                                <li class="page-footer__social-item">
+                                    <a href="http://www.odnoklassniki.ru/dnevnik.ru" title="Дневник.ру в Одноклассниках" class="page-footer__social-link page-footer__social-link_odnoklassniki" target="_blank"></a>
+                                </li>
+                                <li class="page-footer__social-item">
+                                    <a href="https://www.youtube.com/user/DnevnikVideoRussia" title="Дневник.ру на YouTube" class="page-footer__social-link page-footer__social-link_youtube" target="_blank"></a>
+                                </li>
+                        </ul>
+                <div class="page-footer__statistics" bis_skin_checked="1">
+                </div>
+
+            </div>
+
+
+            <div class="page-footer__copyright-layout" bis_skin_checked="1">
+                    <a href="https://dnevnik.ru/terms/" class="page-footer__copyright-layout-agreement">Пользовательское соглашение</a>
+                
+                <div class="page-footer__copyright-layout-details" bis_skin_checked="1">
+                        <a href="https://dnevnik.ru/news/261588" title="Дневник.ру - победитель Премии Рунета 2012 в номинации «Электронное государство в информационном обществе»" class="page-footer__awards-of-runet"></a>
+                        <span class="page-footer__age-category">
+                            6+
+                            <div class="page-footer__age-category-buble" bis_skin_checked="1">
+                                Информация, размещенная в Единой образовательной сети "Дневник.ру", относится к информационной продукции, допускаемой к обороту для детей, достигших возраста шести лет в соответствии со ст. 8 
+                                <a href="https://support.dnevnik.ru/50" target="_blank" class="page-footer__age-category-buble-link">ФЗ №436 от 29.12.2010 г.</a>
+                            </div>
+                        </span>
+                        <div class="page-footer__age-category-block" bis_skin_checked="1">
+                            Информация, размещенная в Единой образовательной сети "Дневник.ру", относится к информационной продукции, допускаемой к обороту для детей, достигших возраста шести лет в соответствии со ст. 8 
+                            <a href="https://support.dnevnik.ru/50" target="_blank" class="page-footer__age-category-buble-link">ФЗ №436 от 29.12.2010 г.</a>
+                        </div>
+                    <p class="page-footer__copyright-layout__terms">© 2007-2025 ООО «Дневник.ру»</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            require(['blocks/footerCopyright/footerCopyright'],
+                function () {
+                });
+        </script>
+    </div>
+<div class="clear" bis_skin_checked="1"></div>    
+    
+<script type="text/javascript">
+    require(['yandexMetrika/yandexMetrikaCounter']);
+</script>
+
+    <script type="text/javascript">
+        require(['analytics/commonYaMetrika']);
+    </script>
+
+<noscript>
+    <div>
+            <img src="//mc.yandex.ru/watch/17969140" style="position: absolute; left: -9999px;" alt="" />
+    </div>
+</noscript>
+    
+
+
+
+    <div id="vk_chat_widget" style="(height: 44px)" bis_skin_checked="1"><div class="fuNxh" style=""><div class="wTqkl sjdNO"><div class="IrHwT"></div><div class="NJmdt"><div class="CfZPE"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"><g><g transform="rotate(-225 5.2 2.8)"><path fill="none" stroke="#92cbde" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M2.588-1.53v0h5.809v5.88"></path></g></g></svg></div><div class="d64ev"></div><div class="J4W_R">Новое сообщение</div><a class="sEWzu iHMaO" href="https://dnevnik.ru/chat?chatsource=archivevk" target="_blank" rel="noreferrer"><div class="tvlOr" style="top: -40px; left: -50px;">Архив чатов Дневник.ру<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="left: calc(50% - 10px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.41266 7.51954C5.57195 9.49507 8.42815 9.49507 9.58745 7.51954L14.0001 0H0Z" fill="#0F3159"></path></svg></div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><g clip-path="url(#clip0_2687_21106)"><path d="M14.125 0.5H1.875C0.841125 0.5 0 1.34113 0 2.375V4.875C0 5.22019 0.279813 5.5 0.625 5.5H1.25V13.625C1.25 14.6589 2.09113 15.5 3.125 15.5H12.875C13.9089 15.5 14.75 14.6589 14.75 13.625V5.5H15.375C15.7202 5.5 16 5.22019 16 4.875V2.375C16 1.34113 15.1589 0.5 14.125 0.5ZM13.5 13.625C13.5 13.9696 13.2196 14.25 12.875 14.25H3.125C2.78038 14.25 2.5 13.9696 2.5 13.625V5.5H13.5V13.625ZM14.75 4.25H1.25V2.375C1.25 2.03038 1.53038 1.75 1.875 1.75H14.125C14.4696 1.75 14.75 2.03038 14.75 2.375V4.25Z" fill="#0087C0"></path><path d="M6.75 8H9.25C9.59519 8 9.875 7.72019 9.875 7.375C9.875 7.02981 9.59519 6.75 9.25 6.75H6.75C6.40481 6.75 6.125 7.02981 6.125 7.375C6.125 7.72019 6.40481 8 6.75 8Z" fill="#0087C0"></path></g><defs><clipPath id="clip0_2687_21106"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>Архив</a><div class="lsEJm"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 10"><g><g transform="rotate(-315 5 5)"><path fill="#a9e3fc" d="M4 0a1 1 0 0 1 2 0v4h4a1 1 0 0 1 0 2H6v4a1 1 0 0 1-2 0V6H0a1 1 0 0 1 0-2h4z"></path></g></g></svg></div></div></div><div class="nn0mf"><div class="g5jga"><div class="TN1dV">На сайт</div><p class="_0sc6h">Чаты Cферум</p><a class="sEWzu iHMaO" href="https://dnevnik.ru/chat?chatsource=archivevk" target="_blank" rel="noreferrer"><div class="tvlOr" style="top: -40px; left: 1px;">Архив чатов Дневник.ру<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" style="left: calc(50% - 10px);"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L4.41266 7.51954C5.57195 9.49507 8.42815 9.49507 9.58745 7.51954L14.0001 0H0Z" fill="#0F3159"></path></svg></div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><g clip-path="url(#clip0_2687_21106)"><path d="M14.125 0.5H1.875C0.841125 0.5 0 1.34113 0 2.375V4.875C0 5.22019 0.279813 5.5 0.625 5.5H1.25V13.625C1.25 14.6589 2.09113 15.5 3.125 15.5H12.875C13.9089 15.5 14.75 14.6589 14.75 13.625V5.5H15.375C15.7202 5.5 16 5.22019 16 4.875V2.375C16 1.34113 15.1589 0.5 14.125 0.5ZM13.5 13.625C13.5 13.9696 13.2196 14.25 12.875 14.25H3.125C2.78038 14.25 2.5 13.9696 2.5 13.625V5.5H13.5V13.625ZM14.75 4.25H1.25V2.375C1.25 2.03038 1.53038 1.75 1.875 1.75H14.125C14.4696 1.75 14.75 2.03038 14.75 2.375V4.25Z" fill="#0087C0"></path><path d="M6.75 8H9.25C9.59519 8 9.875 7.72019 9.875 7.375C9.875 7.02981 9.59519 6.75 9.25 6.75H6.75C6.40481 6.75 6.125 7.02981 6.125 7.375C6.125 7.72019 6.40481 8 6.75 8Z" fill="#0087C0"></path></g><defs><clipPath id="clip0_2687_21106"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg>Архив</a></div><div class="DGhFf"><div class="VhmI0"><div class="JYowz"></div><p class="EJR8Q">Возобновите общение — вступите в чаты</p><div class="w6PWr"><p class="T9HHs">По клику откроется регистрация в Сферум. Это быстро и безопасно</p><button class="wBfrn FMorn cytSZ nutNE">Вступить</button></div><a class="xyAmx" href="https://support.dnevnik.ru/1247" target="_blank" rel="noreferrer">Инструкция</a></div><div class="ocKuh"><a href="https://forms.yandex.ru/cloud/67c94591f47e736c8a82ce1d?userid=1000015929249" target="_blank" rel="noopener noreferrer"><span>Поделиться мнением</span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 8 12"><g><g transform="rotate(-45 3.5 5)"><path fill="#2291be" d="M4.328 1c.553 0 1 .348 1 .778v5.444c0 .273-.18.513-.454.652-.139.274-.379.454-.652.454h-5.444c-.43 0-.778-.447-.778-1 0-.552.348-1 .778-1h4.55v-4.55c0-.43.448-.778 1-.778z"></path></g></g></svg></a></div></div></div></div></div>
+    <link rel="stylesheet" href="https://static.dnevnik.ru/client/vk_chat.css?v=5c48e5f7" type="text/css">
+    <script>
+        window.__VK_CHAT__INITIAL__STATE__ = {"superAppToken":null,"zeroHeight":false,"error":"NoUPS","appId":51880861,"vkAuthName":"login_with_multi_user","vkAuthFlowName":"edu","expandWidgetByDefault":false,"mongooseArchiveLink":"https://dnevnik.ru/chat?chatsource=archivevk","templateUrl":"https://dnevnik.ru/sferum","peerId":"0","chatJoinHash":"","vkAuthStatePrefix":"vkstate_","chatSource":"","queryChatSource":"","loaderUrl":null,"surveyLink":"https://forms.yandex.ru/cloud/67c94591f47e736c8a82ce1d?userid=1000015929249","sferumPageLink":"https://dnevnik.ru/sferum/chats","returnUrl":"https://dnevnik.ru","userId":"0","contactsExperimentAvailable":false,"fastFiltersEnabled":false,"filters":null,"helpInfo":{"busyUPSText":"Инструкция","busyUPSLink":"https://support.dnevnik.ru/1393","falseUPSText":"Инструкция","falseUPSLink":"https://support.dnevnik.ru/1393","noUPSText":"Инструкция","noUPSLink":null,"noTokenText":null,"noTokenLink":null},"errorInfo":{"headerText":"Возобновите общение — вступите в чаты","text":"По клику откроется регистрация в Сферум. Это быстро и безопасно","buttonText":"Вступить","helpText":"Инструкция","sferumUserAvatars":null,"sferumUserAvatarsText":null},"showAlert":false,"showNoUpsAlert":true,"sferumWidgetStubExperimentAvailable":true};
+    </script>
+    <script src="https://static.dnevnik.ru/client/vk_chat.js?v=8a0514a1" type="text/javascript"></script>
+
+
+
+
+<iframe scrolling="no" allowfullscreen="" width="0" height="0" style="display: block; border-width: 0px; position: absolute;"></iframe></body></html>
